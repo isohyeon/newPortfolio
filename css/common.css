@@ -135,7 +135,7 @@ body {
   -ms-transform: translateX(-50%);
       transform: translateX(-50%);
   width: 90%;
-  height: 100px;
+  height: 5.208vw;
   z-index: 100;
 }
 
@@ -147,7 +147,7 @@ body {
 }
 
 .app-common.app-header .header-wrap .top-logo img {
-  width: 138px;
+  width: 7.187vw;
 }
 
 .app-common.app-header .header-wrap .toggle {
@@ -175,7 +175,7 @@ body {
 
 .app-common.app-body section {
   height: 100vh;
-  padding: 100px 100px 60px 100px;
+  padding: 5.208vw 5.208vw 3.125vw 5.208vw;
 }
 
 .app-common.app-body section .main-content {
@@ -188,13 +188,13 @@ body {
 .app-common.app-body section .main-content .main-text-box p {
   color: #fff;
   text-transform: uppercase;
-  font-size: 126px;
+  font-size: 6.563vw;
   font-weight: 400;
-  line-height: 180px;
+  line-height: 9.375vw;
 }
 
 .app-common.app-body section .main-content .left-text-box .project-careers {
-  margin-bottom: 40px;
+  margin-bottom: 2.083vw;
 }
 
 .app-common.app-body section .main-content .left-text-box .careers p,
@@ -208,15 +208,15 @@ body {
 }
 
 .app-common.app-body section .main-content .left-text-box p {
-  font-size: 35px;
+  font-size: 1.823vw;
   font-weight: 400;
-  margin-bottom: 15px;
+  margin-bottom: 0.781vw;
 }
 
 .app-common.app-body section .main-content .left-text-box li {
-  font-size: 30px;
+  font-size: 1.563vw;
   font-weight: 400;
-  line-height: 50px;
+  line-height: 2.604vw;
 }
 
 .app-common.app-body section.gallery-content {
@@ -224,34 +224,34 @@ body {
 }
 
 .app-common.app-body section.gallery-content .swiper-slide {
-  padding: 80px;
+  padding: 4.167vw;
   position: relative;
 }
 
 .app-common.app-body section.gallery-content .swiper-slide .text-wrap {
   text-align: left;
   position: absolute;
-  bottom: 120px;
-  left: 170px;
+  bottom: 6.25vw;
+  left: 8.854vw;
   z-index: 10;
 }
 
 .app-common.app-body section.gallery-content .swiper-slide .text-wrap .project-title {
-  font-size: 90px;
+  font-size: 4.688vw;
   font-weight: 500;
   color: #fff;
 }
 
 .app-common.app-body section.gallery-content .swiper-slide .text-wrap .project-type {
-  font-size: 80px;
+  font-size: 4.167vw;
   font-weight: 500;
   color: transparent;
-  -webkit-text-stroke: 2px #5F72D3;
-  margin-bottom: 30px;
+  -webkit-text-stroke: 0.104vw #5F72D3;
+  margin-bottom: 1.563vw;
 }
 
 .app-common.app-body section.gallery-content .swiper-slide .text-wrap .project-link a {
-  font-size: 30px;
+  font-size: 1.563vw;
   font-weight: 400;
   color: #fff;
   text-decoration: none;
@@ -259,17 +259,21 @@ body {
 
 .app-common.app-body section.gallery-content .swiper-slide .img-wrap {
   position: absolute;
-  right: 100px;
-  top: 178px;
-  width: 1200px;
-  height: 680px;
+  right: 5.208vw;
+  top: 9.271vw;
+  width: 62.5vw;
+  height: 35.417vw;
   background: #000;
   border-radius: 5px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
+  object-fit: cover;
 }
 
 .app-common.app-body section.gallery-content .swiper-slide .img-wrap img {
   border-radius: 5px;
+  object-fit: cover;
+  width: 62.5vw;
+  height: 35.417vw;
 }
 
 .app-common.app-body .top-btn-wrap {
@@ -353,7 +357,7 @@ section:nth-of-type(3) {
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
   top: 190px;
-  left: 120px !important;
+  left: 130px !important;
   color: transparent;
   width: 20% !important;
 }
