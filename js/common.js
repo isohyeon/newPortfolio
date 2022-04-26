@@ -1,5 +1,7 @@
 'use strict';
 
+// mouse wheeo scroll code
+
 var body = window.opera ? document.compatMode == "CSS1Compat" ? $('html') : $('body') : $('html,body'),
     section = $('section');
 
@@ -44,4 +46,9 @@ function navigateDown() {
 $(function () {
   scrollPage();
 });
+
+// popup open code
+
+
+// mouse cursor custom code
 //# sourceMappingURL=common.js.map
