@@ -9,3 +9,4 @@ plus skill <br />
 <img src="https://img.shields.io/badge/REACT-61DAFB?style=flat-square&logo=React&logoColor=white"/> <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=MySQL&logoColor=white"/>
 
 using toll <br />
+<img src="https://img.shields.io/badge/VSCODE-007ACC?style=flat-square&logo=Visual Studio Code&logoColor=white"/> <img src="https://img.shields.io/badge/adobeXD-FF61F6?style=flat-square&logo=Adobe XD Code&logoColor=white"/> 
