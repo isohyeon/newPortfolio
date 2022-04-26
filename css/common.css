@@ -140,6 +140,7 @@ body {
 }
 
 .app-common.app-header .header-wrap .top-logo {
+  cursor: pointer;
   position: absolute;
   top: 50%;
   -ms-transform: translateY(-50%);
@@ -160,17 +161,17 @@ body {
 
 .app-common.app-header .header-wrap .toggle span {
   display: block;
-  width: 50px;
-  height: 5px;
+  width: 2.604vw;
+  height: 0.26vw;
   background-color: #fff;
 }
 
 .app-common.app-header .header-wrap .toggle span:first-child {
-  margin-bottom: 10px;
+  margin-bottom: 0.521vw;
 }
 
 .app-common.app-header .header-wrap .toggle span:nth-child(2) {
-  margin-bottom: 10px;
+  margin-bottom: 0.521vw;
 }
 
 .app-common.app-body section {
@@ -255,7 +256,6 @@ body {
   font-size: 4.167vw;
   font-weight: 500;
   color: transparent;
-  -webkit-text-stroke: 0.104vw #5F72D3;
   margin-bottom: 1.563vw;
 }
 
@@ -351,32 +351,64 @@ section:nth-of-type(3) {
   background: #fed500;
 }
 
+.swiper .swiper-slide.slide-one .project-type {
+  -webkit-text-stroke: 0.104vw #5815a5;
+}
+
 .swiper .swiper-slide.slide-two {
   background: rgba(243, 70, 74, 0.5);
+}
+
+.swiper .swiper-slide.slide-two .project-type {
+  -webkit-text-stroke: 0.104vw #E7161A;
 }
 
 .swiper .swiper-slide.slide-three {
   background: #F3464A;
 }
 
+.swiper .swiper-slide.slide-three .project-type {
+  -webkit-text-stroke: 0.104vw #333333;
+}
+
 .swiper .swiper-slide.slide-four {
-  background: #5F72D3;
+  background: #4051A8;
+}
+
+.swiper .swiper-slide.slide-four .project-type {
+  -webkit-text-stroke: 0.104vw #333333;
 }
 
 .swiper .swiper-slide.slide-five {
   background: #3ABF71;
 }
 
+.swiper .swiper-slide.slide-five .project-type {
+  -webkit-text-stroke: 0.104vw #333333;
+}
+
 .swiper .swiper-slide.slide-six {
   background: #151E4A;
+}
+
+.swiper .swiper-slide.slide-six .project-type {
+  -webkit-text-stroke: 0.104vw rgba(96, 130, 244, 0.5);
 }
 
 .swiper .swiper-slide.slide-seven {
   background: #FF9B2A;
 }
 
+.swiper .swiper-slide.slide-seven .project-type {
+  -webkit-text-stroke: 0.104vw #333333;
+}
+
 .swiper .swiper-slide.slide-eight {
-  background: #151E4A;
+  background: #366DF2;
+}
+
+.swiper .swiper-slide.slide-eight .project-type {
+  -webkit-text-stroke: 0.104vw #333333;
 }
 
 .swiper-horizontal > .swiper-pagination-bullets,
