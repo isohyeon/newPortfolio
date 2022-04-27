@@ -61,9 +61,12 @@ function closePopup() {
 function scrollDisable() {
   $('html, body').addClass('popup');
 }
+
 function scrollAble() {
   $('html, body').removeClass('popup');
 }
 
 // mouse cursor custom code
+
+// main text animation 효과
 //# sourceMappingURL=common.js.map

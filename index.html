@@ -10,8 +10,8 @@
 		<title>SoHyeon</title>
 
 		<link rel="stylesheet" type="text/css" href="./plugin/vendor.min.css">
-		<link rel="stylesheet" type="text/css" href="./css/common.css?20220426">
-		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		<link rel="stylesheet" type="text/css" href="./css/common.css?20220427">
+		<link rel="stylesheet" type="text/css" href="./css/style.css?20220427">
 		<link rel="shortcut icon" href="./img/fa.ico">
 		
 	</head>
@@ -73,7 +73,7 @@
   </section>
   <section class="gallery-content">
     <div class="gallery">
-      <div class="swiper mySwiper">
+      <div class="swiper gallerySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide slide-one">
             <div class="text-wrap">
@@ -81,7 +81,7 @@
               <h4 class="project-type">Adaptive Page Publishing</h4>
               <p class="project-link"><a href="https://playmoongu.com/" target='_blank'>playmoongu.com</a></p>
             </div>
-            <div class="img-wrap">
+            <div class="img-wrap" onClick="openPopup('content01');">
               <img src="./img/gallery01.png" alt="">
             </div>
           </div>
@@ -100,7 +100,7 @@
               <h4 class="project-type">Responsive Publishing</h4>
               <p class="project-link"><a href="https://www.ddalgicong.com/" target='_blank'>www.ddalgicong.com</a></p>
             </div>
-            <div class="img-wrap">
+            <div class="img-wrap" onClick="openPopup('content03');">
               <img src="./img/gallery03.png" alt="">
             </div>
           </div>
@@ -164,19 +164,42 @@
   </section>
 
   <!-- content popup markup -->
-  <div id="content02" class="popup">
-    <div class="popup-box">
-      <div class="popup-content">
-        <div class="img-content">
-          <img src="./img/02_content.png" alt="딸기콩 관리자">
+    <div id="content01" class="popup">
+      <div class="popup-box">
+        <div class="popup-content">
+          <div class="img-content">
+            <img src="./img/01_content.png" alt="문구야놀자">
+          </div>
         </div>
       </div>
-      
+      <div class="cancel-btn" onclick="closePopup();">
+        <img src="./img/close-btn.png" alt="닫기버튼">
+      </div>
     </div>
-    <div class="cancel-btn" onclick="closePopup();">
-      <img src="./img/close-btn.png" alt="닫기버튼">
+    <div id="content02" class="popup">
+      <div class="popup-box">
+        <div class="popup-content">
+          <div class="img-content">
+            <img src="./img/02_content.png" alt="딸기콩 관리자">
+          </div>
+        </div>
+      </div>
+      <div class="cancel-btn" onclick="closePopup();">
+        <img src="./img/close-btn.png" alt="닫기버튼">
+      </div>
     </div>
-  </div>
+    <div id="content03" class="popup">
+      <div class="popup-box">
+        <div class="popup-content">
+          <div class="img-content">
+            <img src="./img/03_content.png" alt="딸기콩 랜딩페이지">
+          </div>
+        </div>
+      </div>
+      <div class="cancel-btn" onclick="closePopup();">
+        <img src="./img/close-btn.png" alt="닫기버튼">
+      </div>
+    </div>
 
 </div>
 
@@ -186,7 +209,7 @@
 
 <!-- Initialize Swiper -->
 <script>
-  var swiper = new Swiper(".mySwiper", {
+  var swiper = new Swiper(".gallerySwiper", {
     // mousewheel: true,
     pagination: {
       el: ".swiper-pagination",
