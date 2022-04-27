@@ -48,7 +48,22 @@ $(function () {
 });
 
 // popup open code
+function openPopup(el) {
+  $('.popup').hide();
+  $('#' + el).fadeIn(200);
+}
 
+function closePopup() {
+  $('.popup').fadeOut(300);
+}
+
+// background scroll 막기
+function scrollDisable() {
+  $('html, body').addClass('popup');
+}
+function scrollAble() {
+  $('html, body').removeClass('popup');
+}
 
 // mouse cursor custom code
 //# sourceMappingURL=common.js.map

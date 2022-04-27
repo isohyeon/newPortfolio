@@ -33,7 +33,6 @@
 </header>
 
 <div class="app-body app-common">
-  
   <section>
     <div class="main-content">
       <div class="main-text-box">
@@ -91,7 +90,7 @@
               <h3 class="project-title">딸기콩 <br /> 관리자</h3>
               <h4 class="project-type">Bootstrap Publishing</h4>
             </div>
-            <div class="img-wrap">
+            <div class="img-wrap" onClick="openPopup('content02');">
               <img src="./img/gallery02.png" alt="">
             </div>
           </div>
@@ -99,7 +98,7 @@
             <div class="text-wrap">
               <h3 class="project-title">딸기콩 <br /> 랜딩페이지</h3>
               <h4 class="project-type">Responsive Publishing</h4>
-              <p class="project-link"><a href="https://www.ddalgicong.com/"  target='_blank'>www.ddalgicong.com</a></p>
+              <p class="project-link"><a href="https://www.ddalgicong.com/" target='_blank'>www.ddalgicong.com</a></p>
             </div>
             <div class="img-wrap">
               <img src="./img/gallery03.png" alt="">
@@ -109,8 +108,8 @@
             <div class="text-wrap">
               <h3 class="project-title">굿뜨래페이 <br /> 랜딩페이지</h3>
               <h4 class="project-type">Responsive Publishing</h4>
-              <p class="project-link"><a
-                  href="https://goodtraepay.buyeo.go.kr/buyeo" target='_blank'>goodtraepay.buyeo.go.kr/buyeo</a>
+              <p class="project-link"><a href="https://goodtraepay.buyeo.go.kr/buyeo"
+                  target='_blank'>goodtraepay.buyeo.go.kr/buyeo</a>
               </p>
             </div>
             <div class="img-wrap">
@@ -142,7 +141,7 @@
               <h4 class="project-type">Moblie Page Publishing</h4>
               <p class="project-link"><a href="">개발진행 중</a></p>
             </div>
-            <div class="img-wrap"> 
+            <div class="img-wrap">
               <img src="./img/gallery07.png" alt="">
             </div>
           </div>
@@ -152,7 +151,7 @@
               <h4 class="project-type">Adaptive Page Publishing</h4>
               <p class="project-link"><a href="https://www.sunnyseoul.com/citizen/index.do">www.sunnyseoul.com</a></p>
             </div>
-            <div class="img-wrap"> 
+            <div class="img-wrap">
               <img src="./img/gallery08.png" alt="">
             </div>
           </div>
@@ -163,6 +162,22 @@
       </div>
     </div>
   </section>
+
+  <!-- content popup markup -->
+  <div id="content02" class="popup">
+    <div class="popup-box">
+      <div class="popup-content">
+        <div class="img-content">
+          <img src="./img/02_content.png" alt="딸기콩 관리자">
+        </div>
+      </div>
+      
+    </div>
+    <div class="cancel-btn" onclick="closePopup();">
+      <img src="./img/close-btn.png" alt="닫기버튼">
+    </div>
+  </div>
+
 </div>
 
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
