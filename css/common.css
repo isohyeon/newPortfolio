@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /*변수*/
+/*미디어분기*/
 /* noto-sans-kr-100 - korean */
 @font-face {
   font-family: 'Noto Sans KR';
@@ -129,6 +130,10 @@ body {
   max-width: 1920px;
 }
 
+.app-common.app-header {
+  width: 100%;
+}
+
 .app-common.app-header .header-wrap {
   position: fixed;
   left: 50%;
@@ -137,6 +142,12 @@ body {
   width: 90%;
   height: 5.208vw;
   z-index: 100;
+}
+
+@media screen and (max-width: 1080px) {
+  .app-common.app-header .header-wrap {
+    height: 15vw;
+  }
 }
 
 .app-common.app-header .header-wrap .top-logo {
@@ -149,6 +160,12 @@ body {
 
 .app-common.app-header .header-wrap .top-logo img {
   width: 7.187vw;
+}
+
+@media screen and (max-width: 1080px) {
+  .app-common.app-header .header-wrap .top-logo img {
+    width: 100px;
+  }
 }
 
 .app-common.app-header .header-wrap .toggle {
@@ -179,11 +196,23 @@ body {
   padding: 5.208vw 5.208vw 3.125vw 5.208vw;
 }
 
+@media screen and (max-width: 1080px) {
+  .app-common.app-body section {
+    padding: 15vw 0 0 0;
+  }
+}
+
 .app-common.app-body section .main-content {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 2fr 1fr;
       grid-template-columns: 2fr 1fr;
+}
+
+@media screen and (max-width: 1080px) {
+  .app-common.app-body section .main-content {
+    display: block;
+  }
 }
 
 .app-common.app-body section .main-content .main-text-box p {
@@ -326,14 +355,6 @@ body {
   100% {
     bottom: -20px;
   }
-}
-
-section:nth-of-type(2) {
-  background-color: #fff;
-}
-
-section:nth-of-type(3) {
-  background-color: #6fc7bb;
 }
 
 .swiper {
