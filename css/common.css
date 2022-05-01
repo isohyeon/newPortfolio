@@ -127,7 +127,6 @@ body {
 
 .app-common {
   margin: 0px auto;
-  max-width: 1920px;
 }
 
 .app-common.app-header {
@@ -301,10 +300,18 @@ body {
   top: 9.271vw;
   width: 62.5vw;
   height: 35.417vw;
+  overflow: hidden;
   background: #000;
   border-radius: 5px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
   object-fit: cover;
+  cursor: pointer;
+}
+
+.app-common.app-body section.gallery-content .swiper-slide .img-wrap:hover img {
+  -ms-transform: scale(1.1);
+      transform: scale(1.1);
+  box-sizing: border-box;
 }
 
 .app-common.app-body section.gallery-content .swiper-slide .img-wrap img {
@@ -312,6 +319,7 @@ body {
   object-fit: cover;
   width: 62.5vw;
   height: 35.417vw;
+  transition: all 0.8s linear;
 }
 
 .app-common.app-body .top-btn-wrap {
