@@ -167,7 +167,7 @@ body {
   }
 }
 
-.app-common.app-header .header-wrap .toggle {
+.app-common.app-header .header-wrap .logo-link {
   position: absolute;
   right: 0;
   top: 50%;
@@ -175,19 +175,14 @@ body {
       transform: translateY(-50%);
 }
 
-.app-common.app-header .header-wrap .toggle span {
-  display: block;
-  width: 2.604vw;
-  height: 0.26vw;
-  background-color: #fff;
+.app-common.app-header .header-wrap .logo-link img {
+  width: 2.5vw;
+  cursor: pointer;
+  margin-right: 0.5vw;
 }
 
-.app-common.app-header .header-wrap .toggle span:first-child {
-  margin-bottom: 0.521vw;
-}
-
-.app-common.app-header .header-wrap .toggle span:nth-child(2) {
-  margin-bottom: 0.521vw;
+.app-common.app-header .header-wrap .logo-link img:last-child {
+  margin: 0 !important;
 }
 
 .app-common.app-body section {
