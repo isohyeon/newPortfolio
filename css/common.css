@@ -143,7 +143,7 @@ body {
   z-index: 100;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 415px) {
   .app-common.app-header .header-wrap {
     height: 15vw;
   }
@@ -161,9 +161,9 @@ body {
   width: 7.187vw;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 415px) {
   .app-common.app-header .header-wrap .top-logo img {
-    width: 100px;
+    width: 27.778vw;
   }
 }
 
@@ -185,12 +185,18 @@ body {
   margin: 0 !important;
 }
 
+@media screen and (max-width: 415px) {
+  .app-common.app-header .header-wrap .logo-link img {
+    width: 7vw;
+  }
+}
+
 .app-common.app-body section {
   height: 100vh;
   padding: 5.208vw 5.208vw 3.125vw 5.208vw;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 415px) {
   .app-common.app-body section {
     padding: 15vw 0 0 0;
   }
@@ -203,9 +209,20 @@ body {
       grid-template-columns: 2fr 1fr;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 415px) {
   .app-common.app-body section .main-content {
+    padding: 6.667vw;
     display: block;
+  }
+}
+
+.app-common.app-body section .main-content .main-text-box {
+  margin-bottom: 13.889vw;
+}
+
+@media screen and (max-width: 415px) {
+  .app-common.app-body section .main-content .main-text-box {
+    margin-bottom: 6.667vw;
   }
 }
 
@@ -217,8 +234,22 @@ body {
   line-height: 9.375vw;
 }
 
+@media screen and (max-width: 415px) {
+  .app-common.app-body section .main-content .main-text-box p {
+    font-size: 11.111vw;
+    font-weight: 400;
+    line-height: 12.778vw;
+  }
+}
+
 .app-common.app-body section .main-content .left-text-box .project-careers {
   margin-bottom: 2.083vw;
+}
+
+@media screen and (max-width: 415px) {
+  .app-common.app-body section .main-content .left-text-box .project-careers {
+    margin-bottom: 24px;
+  }
 }
 
 .app-common.app-body section .main-content .left-text-box .careers p,
@@ -228,7 +259,7 @@ body {
 
 .app-common.app-body section .main-content .left-text-box p,
 .app-common.app-body section .main-content .left-text-box ul > li {
-  color: #fff;
+  color: #FFFFFF;
 }
 
 .app-common.app-body section .main-content .left-text-box p {
@@ -237,12 +268,27 @@ body {
   margin-bottom: 0.781vw;
 }
 
+@media screen and (max-width: 415px) {
+  .app-common.app-body section .main-content .left-text-box p {
+    font-size: 5.556vw;
+    font-weight: 400;
+  }
+}
+
 .app-common.app-body section .main-content .left-text-box li {
   font-size: 1.51vw;
   font-weight: 400;
   line-height: 2.45vw;
   word-break: keep-all;
   position: relative;
+}
+
+@media screen and (max-width: 415px) {
+  .app-common.app-body section .main-content .left-text-box li {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+  }
 }
 
 .app-common.app-body section .main-content .left-text-box li::before {
@@ -256,12 +302,20 @@ body {
   padding: 0 !important;
 }
 
-.app-common.app-body section.gallery-content .swiper-slide {
+.app-common.app-body section.gallery-content .swiper {
+  width: 100%;
+  height: 100vh;
+}
+
+.app-common.app-body section.gallery-content .swiper .swiper-slide {
+  text-align: center;
+  font-size: 0.938vw;
+  background: #FFFFFF;
   padding: 4.167vw;
   position: relative;
 }
 
-.app-common.app-body section.gallery-content .swiper-slide .text-wrap {
+.app-common.app-body section.gallery-content .swiper .swiper-slide .text-wrap {
   text-align: left;
   position: absolute;
   bottom: 6.25vw;
@@ -269,27 +323,55 @@ body {
   z-index: 10;
 }
 
-.app-common.app-body section.gallery-content .swiper-slide .text-wrap .project-title {
+@media screen and (max-width: 415px) {
+  .app-common.app-body section.gallery-content .swiper .swiper-slide .text-wrap {
+    margin-bottom: 5.556vw;
+  }
+}
+
+.app-common.app-body section.gallery-content .swiper .swiper-slide .text-wrap .project-title {
   font-size: 4.688vw;
   font-weight: 500;
   color: #fff;
 }
 
-.app-common.app-body section.gallery-content .swiper-slide .text-wrap .project-type {
+@media screen and (max-width: 415px) {
+  .app-common.app-body section.gallery-content .swiper .swiper-slide .text-wrap .project-title {
+    font-size: 13.333vw;
+    font-weight: 500;
+  }
+}
+
+.app-common.app-body section.gallery-content .swiper .swiper-slide .text-wrap .project-type {
   font-size: 4.167vw;
   font-weight: 500;
   color: transparent;
   margin-bottom: 1.563vw;
 }
 
-.app-common.app-body section.gallery-content .swiper-slide .text-wrap .project-link a {
+@media screen and (max-width: 415px) {
+  .app-common.app-body section.gallery-content .swiper .swiper-slide .text-wrap .project-type {
+    font-size: 10vw;
+    font-weight: 500;
+    margin-bottom: 5.556vw;
+  }
+}
+
+.app-common.app-body section.gallery-content .swiper .swiper-slide .text-wrap .project-link a {
   font-size: 1.563vw;
   font-weight: 400;
   color: #fff;
   text-decoration: none;
 }
 
-.app-common.app-body section.gallery-content .swiper-slide .img-wrap {
+@media screen and (max-width: 415px) {
+  .app-common.app-body section.gallery-content .swiper .swiper-slide .text-wrap .project-link a {
+    font-size: 4.444vw;
+    font-weight: 400;
+  }
+}
+
+.app-common.app-body section.gallery-content .swiper .swiper-slide .img-wrap {
   position: absolute;
   right: 5.208vw;
   top: 9.271vw;
@@ -303,33 +385,124 @@ body {
   cursor: pointer;
 }
 
-.app-common.app-body section.gallery-content .swiper-slide .img-wrap:hover img {
+@media screen and (max-width: 415px) {
+  .app-common.app-body section.gallery-content .swiper .swiper-slide .img-wrap {
+    width: 90%;
+    left: 50%;
+    top: 15%;
+    -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+    height: 52vw;
+  }
+}
+
+.app-common.app-body section.gallery-content .swiper .swiper-slide .img-wrap:hover img {
   -ms-transform: scale(1.1);
       transform: scale(1.1);
   box-sizing: border-box;
 }
 
-.app-common.app-body section.gallery-content .swiper-slide .img-wrap img {
+.app-common.app-body section.gallery-content .swiper .swiper-slide .img-wrap img {
   border-radius: 5px;
   object-fit: cover;
-  width: 62.5vw;
+  width: 100%;
   height: 35.417vw;
   transition: all 0.8s linear;
 }
 
-.app-common.app-body .top-btn-wrap {
+@media screen and (max-width: 415px) {
+  .app-common.app-body section.gallery-content .swiper .swiper-slide .img-wrap img {
+    height: 52vw;
+  }
+}
+
+.app-common.app-body section.gallery-content .swiper .swiper-slide.slide-one {
+  background: #fed500;
+}
+
+.app-common.app-body section.gallery-content .swiper .swiper-slide.slide-one .project-type {
+  -webkit-text-stroke: 0.104vw #5815a5;
+}
+
+.app-common.app-body section.gallery-content .swiper .swiper-slide.slide-two {
+  background: #EC595C;
+}
+
+.app-common.app-body section.gallery-content .swiper .swiper-slide.slide-two .project-type {
+  -webkit-text-stroke: 0.104vw #1DA141;
+}
+
+.app-common.app-body section.gallery-content .swiper .swiper-slide.slide-three {
+  background: #F3464A;
+}
+
+.app-common.app-body section.gallery-content .swiper .swiper-slide.slide-three .project-type {
+  -webkit-text-stroke: 0.104vw #8CF252;
+}
+
+.app-common.app-body section.gallery-content .swiper .swiper-slide.slide-four {
+  background: #4051A8;
+}
+
+.app-common.app-body section.gallery-content .swiper .swiper-slide.slide-four .project-type {
+  -webkit-text-stroke: 0.104vw #F5ED45;
+}
+
+.app-common.app-body section.gallery-content .swiper .swiper-slide.slide-five {
+  background: #3ABF71;
+}
+
+.app-common.app-body section.gallery-content .swiper .swiper-slide.slide-five .project-type {
+  -webkit-text-stroke: 0.104vw #514DBF;
+}
+
+.app-common.app-body section.gallery-content .swiper .swiper-slide.slide-six {
+  background: #151E4A;
+}
+
+.app-common.app-body section.gallery-content .swiper .swiper-slide.slide-six .project-type {
+  -webkit-text-stroke: 0.104vw #8D78B0;
+}
+
+.app-common.app-body section.gallery-content .swiper .swiper-slide.slide-seven {
+  background: #FF9B2A;
+}
+
+.app-common.app-body section.gallery-content .swiper .swiper-slide.slide-seven .project-type {
+  -webkit-text-stroke: 0.104vw #0B29B3;
+}
+
+.app-common.app-body section.gallery-content .swiper .swiper-slide.slide-eight {
+  background: #366DF2;
+}
+
+.app-common.app-body section.gallery-content .swiper .swiper-slide.slide-eight .project-type {
+  -webkit-text-stroke: 0.104vw #F2DF29;
+}
+
+.app-common .top-btn-wrap {
   position: relative;
 }
 
-.app-common.app-body .top-btn-wrap .top-btn .border-line-img {
+.app-common .top-btn-wrap .top-btn .border-line-img {
   position: absolute;
-  bottom: -20px;
+  bottom: 1vw;
   left: 44.3%;
   width: 10.417vw;
   animation: borderLine 20s infinite linear;
 }
 
-.app-common.app-body .top-btn-wrap .top-btn .arrow-down-img {
+@media screen and (max-width: 415px) {
+  .app-common .top-btn-wrap .top-btn .border-line-img {
+    width: 27.778vw;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+    bottom: 0 !important;
+  }
+}
+
+.app-common .top-btn-wrap .top-btn .arrow-down-img {
   width: 2.865vw;
   position: absolute;
   bottom: -20px;
@@ -360,79 +533,47 @@ body {
   }
 }
 
-.swiper {
+.app-common .popup {
+  display: none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 100;
 }
 
-.swiper .swiper-slide {
-  text-align: center;
-  font-size: 0.938vw;
-  background: #fff;
+.app-common .popup .popup-box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+  max-width: 80vw;
+  height: 84vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
-.swiper .swiper-slide.slide-one {
-  background: #fed500;
+.app-common .popup .popup-box .img-content {
+  width: 74vw;
 }
 
-.swiper .swiper-slide.slide-one .project-type {
-  -webkit-text-stroke: 0.104vw #5815a5;
+.app-common .popup .popup-box .img-content img {
+  width: 100%;
 }
 
-.swiper .swiper-slide.slide-two {
-  background: #EC595C;
+.app-common .popup .cancel-btn {
+  position: absolute;
+  top: 8%;
+  right: 8%;
+  width: 3vw;
+  cursor: pointer;
 }
 
-.swiper .swiper-slide.slide-two .project-type {
-  -webkit-text-stroke: 0.104vw #1DA141;
-}
-
-.swiper .swiper-slide.slide-three {
-  background: #F3464A;
-}
-
-.swiper .swiper-slide.slide-three .project-type {
-  -webkit-text-stroke: 0.104vw #8CF252;
-}
-
-.swiper .swiper-slide.slide-four {
-  background: #4051A8;
-}
-
-.swiper .swiper-slide.slide-four .project-type {
-  -webkit-text-stroke: 0.104vw #F5ED45;
-}
-
-.swiper .swiper-slide.slide-five {
-  background: #3ABF71;
-}
-
-.swiper .swiper-slide.slide-five .project-type {
-  -webkit-text-stroke: 0.104vw #514DBF;
-}
-
-.swiper .swiper-slide.slide-six {
-  background: #151E4A;
-}
-
-.swiper .swiper-slide.slide-six .project-type {
-  -webkit-text-stroke: 0.104vw #8D78B0;
-}
-
-.swiper .swiper-slide.slide-seven {
-  background: #FF9B2A;
-}
-
-.swiper .swiper-slide.slide-seven .project-type {
-  -webkit-text-stroke: 0.104vw #0B29B3;
-}
-
-.swiper .swiper-slide.slide-eight {
-  background: #366DF2;
-}
-
-.swiper .swiper-slide.slide-eight .project-type {
-  -webkit-text-stroke: 0.104vw #F2DF29;
+.app-common .popup .cancel-btn img {
+  width: 100%;
 }
 
 .swiper-horizontal > .swiper-pagination-bullets,
@@ -442,8 +583,18 @@ body {
   top: 9.896vw;
   left: 6.771vw !important;
   color: transparent;
-  width: 20vw !important;
+  width: 25vw !important;
   height: 200px !important;
+}
+
+@media screen and (max-width: 800px) {
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    top: 60%;
+    right: 0 !important;
+  }
 }
 
 .swiper-pagination-current {
@@ -460,11 +611,27 @@ body {
   margin-left: 0.26vw !important;
 }
 
+@media screen and (max-width: 800px) {
+  .swiper-pagination-current::after {
+    width: 70px;
+    display: inline-block;
+    margin-bottom: 6.2vw !important;
+    margin-left: 6.5px !important;
+  }
+}
+
 .swiper-pagination-current,
 .swiper-pagination-total {
-  color: #fff;
+  color: #FFFFFF;
   font-size: 1.563vw;
   font-weight: 400;
+}
+
+@media screen and (max-width: 800px) {
+  .swiper-pagination-current,
+  .swiper-pagination-total {
+    font-size: 5vw !important;
+  }
 }
 
 .swiper-button-prev {
@@ -479,58 +646,41 @@ body {
   color: #333;
 }
 
+@media screen and (max-width: 800px) {
+  .swiper-button-prev::after {
+    font-size: 5vw !important;
+  }
+}
+
 .swiper-button-next {
   left: 23.354vw !important;
   top: 10.78vw !important;
   z-index: 30 !important;
 }
 
+@media screen and (max-width: 800px) {
+  .swiper-button-next {
+    top: 63% !important;
+    left: 27% !important;
+  }
+}
+
 .swiper-button-next::after {
   font-size: 1.042vw !important;
-  color: #fff;
+  color: #FFFFFF;
 }
 
-.popup {
-  display: none;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7);
-  z-index: 100;
+@media screen and (max-width: 800px) {
+  .swiper-button-next::after {
+    font-size: 5vw !important;
+  }
 }
 
-.popup .popup-box {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-  max-width: 80vw;
-  height: 84vh;
-  overflow-y: scroll;
-  overflow-x: hidden;
-}
-
-.popup .popup-box .img-content {
-  width: 74vw;
-}
-
-.popup .popup-box .img-content img {
-  width: 100%;
-}
-
-.popup .cancel-btn {
-  position: absolute;
-  top: 8%;
-  right: 8%;
-  width: 3vw;
-  cursor: pointer;
-}
-
-.popup .cancel-btn img {
-  width: 100%;
+@media screen and (max-width: 800px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: 60% !important;
+  }
 }
 
 /*
