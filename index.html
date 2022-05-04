@@ -10,8 +10,8 @@
 		<title>SoHyeon</title>
 
 		<link rel="stylesheet" type="text/css" href="./plugin/vendor.min.css">
-		<link rel="stylesheet" type="text/css" href="./css/common.css?20220430">
-		<link rel="stylesheet" type="text/css" href="./css/style.css?20220430">
+		<link rel="stylesheet" type="text/css" href="./css/common.css?20220504">
+		<link rel="stylesheet" type="text/css" href="./css/style.css?20220504">
 		<link rel="shortcut icon" href="./img/fa.ico">
 		
 	</head>
@@ -30,48 +30,53 @@
 </header>
 
 <div class="app-body app-common">
-  <section>
-    <div class="main-content">
-      <div class="main-text-box">
-        <p>ui &middot; ux</p>
-        <p>web publisher</p>
-        <p>portfolio</p>
-      </div>
-      <div class="left-text-box">
-        <div class="project-careers">
-          <p>프로젝트 이력</p>
-          <ul>
-            <li>문구야놀자 웹/모바일(적응형)</li>
-            <li>웅진 딸기콩 랜딩페이지 웹/모바일(반응형)</li>
-            <li>웅진 딸기콩 관리자페이지(부트스트랩)</li>
-            <li>굿뜨래페이 랜딩페이지 웹/모바일(반응형)</li>
-            <li>굿뜨래페이 상생지원금 페이지(적응형)</li>
-            <li>인조이웍스 홈페이지 웹/모바일(반응형)</li>
-            <li>포토이 인생사진 갤러리 모바일</li>
-            <li>태양광 햇빛마루 웹/모바일(적응형) 등...</li>
-          </ul>
+  <section id="content1">
+    <div class="main-content-wrap">
+      <div class="main-content">
+        <div class="main-text-box">
+          <p>ui &middot; ux</p>
+          <p>web publisher</p>
+          <p>portfolio</p>
         </div>
-        <div class="careers">
-          <p>경력</p>
-          <ul>
-            <li>인조이웍스 (2021.01 ~ 2022.04)</li>
-            <li>[프론트엔드]리액트(React.js 자바스크립트)_주말 (2022.01 ~ 2022.04)</li>
-            <li>ui/ux 스마트웹&앱디자인(웹퍼블리싱&프론트엔드)실무과정 (2020.04 ~ 2020.10)</li>
-          </ul>
+        <div class="left-text-box">
+          <div class="project-careers">
+            <p>프로젝트 이력</p>
+            <ul>
+              <li>문구야놀자 웹/모바일(적응형)</li>
+              <li>웅진 딸기콩 랜딩페이지 웹/모바일(반응형)</li>
+              <li>웅진 딸기콩 관리자페이지(부트스트랩)</li>
+              <li>굿뜨래페이 랜딩페이지 웹/모바일(반응형)</li>
+              <li>굿뜨래페이 상생지원금 페이지(적응형)</li>
+              <li>인조이웍스 홈페이지 웹/모바일(반응형)</li>
+              <li>포토이 인생사진 갤러리 모바일</li>
+              <li>태양광 햇빛마루 웹/모바일(적응형) 등...</li>
+            </ul>
+          </div>
+          <div class="careers">
+            <p>경력</p>
+            <ul>
+              <li>인조이웍스 (2021.01 ~ 2022.04)</li>
+              <li>[프론트엔드]리액트(React.js 자바스크립트)_주말 (2022.01 ~ 2022.04)</li>
+              <li>ui/ux 스마트웹&앱디자인(웹퍼블리싱&프론트엔드)실무과정 (2020.04 ~ 2020.10)</li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="top-btn-wrap">
-      <div class="top-btn">
-        <img src="./img/top-border-line.png" alt="border-line-img" class="border-line-img">
-        <img src="./img/arrow-down.png" alt="arrow-down" class="arrow-down-img">
+      <div class="top-btn-wrap show show-active" target="2">
+        <div class="top-btn">
+          <p class="click" id="click">click</p>
+          <img src="./img/top-border-line.png" alt="border-line-img" class="border-line-img">
+          <img src="./img/arrow-down.png" alt="arrow-down" class="arrow-down-img">
+        </div>
       </div>
     </div>
   </section>
-  <section class="gallery-content">
+
+  <section class="gallery-content" id="content2">
     <div class="gallery">
       <div class="swiper gallerySwiper">
         <div class="swiper-wrapper">
+          <button class="show" target="1">test</button>
           <div class="swiper-slide slide-one">
             <div class="text-wrap">
               <h3 class="project-title">문구야놀자</h3>
@@ -230,7 +235,6 @@
 <!-- Initialize Swiper -->
 <script>
   var swiper = new Swiper(".gallerySwiper", {
-    // mousewheel: true,
     pagination: {
       el: ".swiper-pagination",
       type: "fraction",
@@ -241,6 +245,7 @@
     },
   });
 </script>
+
 
 <footer class="app-footer">
 </footer>

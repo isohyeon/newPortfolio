@@ -57,16 +57,16 @@ function closePopup() {
   $('.popup').fadeOut(300);
 }
 
-// background scroll 막기
-function scrollDisable() {
-  $('html, body').addClass('popup');
-}
-
-function scrollAble() {
-  $('html, body').removeClass('popup');
-}
+// bodycontent change
+$('.show').click(function () {
+  $(".show-active").removeClass("show-active");
+  $(this).addClass("show-active");
+  $('#content' + $(this).attr('target')).fadeIn(600).siblings('section').fadeOut(600);
+  e.stopPropagation();
+});
 
 // mouse cursor custom code
+
 
 // main text animation 효과
 //# sourceMappingURL=common.js.map
