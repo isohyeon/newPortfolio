@@ -125,21 +125,8 @@ body {
 }
 
 body::-webkit-scrollbar {
-  width: 8px;
+  width: 0px;
   /* 스크롤바의 너비 */
-}
-
-body::-webkit-scrollbar-thumb {
-  height: 20%;
-  /* 스크롤바의 길이 */
-  background: rgba(0, 0, 0, 0.4);
-  /* 스크롤바의 색상 */
-  border-radius: 10px;
-}
-
-body::-webkit-scrollbar-track {
-  background: #ffffff;
-  /*스크롤바 뒷 배경 색상*/
 }
 
 .app-common {
@@ -211,16 +198,13 @@ body::-webkit-scrollbar-track {
 .app-common.app-body section {
   height: 100vh;
   padding: 5.208vw 5.208vw 3.125vw 5.208vw;
+  position: relative;
 }
 
 @media screen and (max-width: 415px) {
   .app-common.app-body section {
     padding: 15vw 0 0 0;
   }
-}
-
-.app-common.app-body section .main-content-wrap {
-  position: relative;
 }
 
 .app-common.app-body section .main-content-wrap .top-btn-wrap .top-btn:hover {
@@ -250,7 +234,7 @@ body::-webkit-scrollbar-track {
     opacity: 1 !important;
     font-size: 5vw;
     font-weight: 900;
-    bottom: -4vw !important;
+    bottom: 0vw !important;
   }
 }
 
@@ -260,7 +244,6 @@ body::-webkit-scrollbar-track {
   left: 50%;
   -ms-transform: translateX(-50%);
       transform: translateX(-50%);
-  bottom: 10px;
 }
 
 .app-common.app-body section .main-content-wrap .top-btn-wrap .border-line-img {
@@ -274,7 +257,7 @@ body::-webkit-scrollbar-track {
   .app-common.app-body section .main-content-wrap .top-btn-wrap .border-line-img {
     width: 35vw;
     left: 33% !important;
-    bottom: -100px;
+    bottom: 5vh;
   }
 }
 
@@ -289,20 +272,13 @@ body::-webkit-scrollbar-track {
 
 .app-common.app-body section .main-content-wrap .top-btn-wrap .arrow-down-img {
   width: 3vw;
-  bottom: 1vw;
+  bottom: 5vw;
   width: 2.865vw;
   position: absolute;
   left: 50%;
   -ms-transform: translate(-50%);
       transform: translate(-50%);
   animation: arrowMove 5s infinite linear;
-}
-
-@media screen and (max-width: 800px) {
-  .app-common.app-body section .main-content-wrap .top-btn-wrap .arrow-down-img {
-    width: 8vw;
-    bottom: -80px !important;
-  }
 }
 
 @keyframes arrowMove {
@@ -314,6 +290,13 @@ body::-webkit-scrollbar-track {
   }
   100% {
     bottom: -1vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .app-common.app-body section .main-content-wrap .top-btn-wrap .arrow-down-img {
+    width: 8vw;
+    bottom: 5vh !important;
   }
 }
 
@@ -649,6 +632,17 @@ body::-webkit-scrollbar-track {
   height: 200px !important;
 }
 
+@media screen and (max-width: 800px) {
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    top: 46.2%;
+    width: 46% !important;
+    left: 51vw !important;
+  }
+}
+
 .swiper-pagination-current,
 .swiper-pagination-total {
   position: absolute;
@@ -681,11 +675,10 @@ body::-webkit-scrollbar-track {
 
 @media screen and (max-width: 800px) {
   .swiper-pagination-current::after {
-    width: 70px;
+    width: 31.444vw;
     display: inline-block;
-    margin-bottom: 6.2vw !important;
+    margin-bottom: 7%;
     margin-left: 6.5px !important;
-    right: 0;
   }
 }
 
@@ -695,7 +688,7 @@ body::-webkit-scrollbar-track {
 
 @media screen and (max-width: 800px) {
   .swiper-pagination-total {
-    right: 0 !important;
+    left: 42vw !important;
   }
 }
 
@@ -709,6 +702,7 @@ body::-webkit-scrollbar-track {
   .swiper-button-prev {
     position: absolute;
     right: 0px !important;
+    left: 50% !important;
   }
 }
 
@@ -733,7 +727,7 @@ body::-webkit-scrollbar-track {
 @media screen and (max-width: 800px) {
   .swiper-button-next {
     top: 63% !important;
-    left: 27% !important;
+    left: 80% !important;
   }
 }
 
@@ -751,7 +745,9 @@ body::-webkit-scrollbar-track {
 @media screen and (max-width: 800px) {
   .swiper-button-prev,
   .swiper-button-next {
-    top: 60% !important;
+    position: absolute;
+    top: 47% !important;
+    width: 20% !important;
   }
 }
 
