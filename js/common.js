@@ -58,12 +58,12 @@ function closePopup() {
 }
 
 // bodycontent change
-$('.show').click(function () {
-  $(".show-active").removeClass("show-active");
-  $(this).addClass("show-active");
-  $('#content' + $(this).attr('target')).fadeIn(600).siblings('section').fadeOut(600);
-  e.stopPropagation();
-});
+// $('.show').click(function () {
+//   $(".show-active").removeClass("show-active");
+//   $(this).addClass("show-active");
+//   $('#content' + $(this).attr('target')).fadeIn(600).siblings('section').fadeOut(600);
+//   e.stopPropagation();
+// });
 
 // mouse cursor custom code
 

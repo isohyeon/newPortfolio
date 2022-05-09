@@ -119,7 +119,6 @@ body {
   background: #000;
   color: #fff;
   min-height: 100vh;
-  overflow: hidden;
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
@@ -233,6 +232,7 @@ body {
     opacity: 1 !important;
     font-size: 5vw;
     font-weight: 900;
+    bottom: -4vw !important;
   }
 }
 
@@ -250,6 +250,14 @@ body {
   bottom: 1vh;
   left: 43.5% !important;
   animation: borderLine 20s infinite linear;
+}
+
+@media screen and (max-width: 800px) {
+  .app-common.app-body section .main-content-wrap .top-btn-wrap .border-line-img {
+    width: 35vw;
+    left: 33% !important;
+    bottom: -100px;
+  }
 }
 
 @keyframes borderLine {
@@ -270,6 +278,13 @@ body {
   -ms-transform: translate(-50%);
       transform: translate(-50%);
   animation: arrowMove 5s infinite linear;
+}
+
+@media screen and (max-width: 800px) {
+  .app-common.app-body section .main-content-wrap .top-btn-wrap .arrow-down-img {
+    width: 8vw;
+    bottom: -80px !important;
+  }
 }
 
 @keyframes arrowMove {
