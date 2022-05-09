@@ -124,6 +124,24 @@ body {
   user-select: none;
 }
 
+body::-webkit-scrollbar {
+  width: 8px;
+  /* 스크롤바의 너비 */
+}
+
+body::-webkit-scrollbar-thumb {
+  height: 20%;
+  /* 스크롤바의 길이 */
+  background: rgba(0, 0, 0, 0.4);
+  /* 스크롤바의 색상 */
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #ffffff;
+  /*스크롤바 뒷 배경 색상*/
+}
+
 .app-common {
   margin: 0px auto;
 }
@@ -631,18 +649,24 @@ body {
   height: 200px !important;
 }
 
+.swiper-pagination-current,
+.swiper-pagination-total {
+  position: absolute;
+  color: #FFFFFF;
+  font-size: 1.563vw;
+  font-weight: 400;
+}
+
 @media screen and (max-width: 800px) {
-  .swiper-horizontal > .swiper-pagination-bullets,
-  .swiper-pagination-bullets.swiper-pagination-horizontal,
-  .swiper-pagination-custom,
-  .swiper-pagination-fraction {
-    top: 60%;
-    right: 0 !important;
+  .swiper-pagination-current,
+  .swiper-pagination-total {
+    font-size: 5vw !important;
   }
 }
 
 .swiper-pagination-current {
   color: #333 !important;
+  left: 3.5vw;
 }
 
 .swiper-pagination-current::after {
@@ -661,20 +685,17 @@ body {
     display: inline-block;
     margin-bottom: 6.2vw !important;
     margin-left: 6.5px !important;
+    right: 0;
   }
 }
 
-.swiper-pagination-current,
 .swiper-pagination-total {
-  color: #FFFFFF;
-  font-size: 1.563vw;
-  font-weight: 400;
+  left: 15.4vw;
 }
 
 @media screen and (max-width: 800px) {
-  .swiper-pagination-current,
   .swiper-pagination-total {
-    font-size: 5vw !important;
+    right: 0 !important;
   }
 }
 
@@ -682,6 +703,13 @@ body {
   left: 8.671vw !important;
   top: 10.78vw !important;
   z-index: 1000 !important;
+}
+
+@media screen and (max-width: 800px) {
+  .swiper-button-prev {
+    position: absolute;
+    right: 0px !important;
+  }
 }
 
 .swiper-button-prev::after {
