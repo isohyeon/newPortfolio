@@ -147,7 +147,7 @@ body::-webkit-scrollbar {
   z-index: 100;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1023px) {
   .app-common.app-header .header-wrap {
     height: 15vw;
   }
@@ -165,7 +165,7 @@ body::-webkit-scrollbar {
   width: 7.187vw;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1023px) {
   .app-common.app-header .header-wrap .top-logo img {
     width: 27.778vw;
   }
@@ -189,7 +189,7 @@ body::-webkit-scrollbar {
   margin: 0 !important;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1023px) {
   .app-common.app-header .header-wrap .logo-link img {
     width: 7vw;
   }
@@ -201,7 +201,7 @@ body::-webkit-scrollbar {
   position: relative;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1023px) {
   .app-common.app-body section {
     padding: 15vw 5.208vw 3.125vw 5.208vw;
   }
@@ -229,7 +229,7 @@ body::-webkit-scrollbar {
   transition: 1s;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1023px) {
   .app-common.app-body section .main-content-wrap .top-btn-wrap .top-btn .click {
     opacity: 1 !important;
     font-size: 5vw;
@@ -253,7 +253,7 @@ body::-webkit-scrollbar {
   animation: borderLine 20s infinite linear;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1023px) {
   .app-common.app-body section .main-content-wrap .top-btn-wrap .border-line-img {
     width: 35vw;
     left: 33% !important;
@@ -293,7 +293,7 @@ body::-webkit-scrollbar {
   }
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1023px) {
   .app-common.app-body section .main-content-wrap .top-btn-wrap .arrow-down-img {
     width: 8vw;
     bottom: 5vh !important;
@@ -307,7 +307,7 @@ body::-webkit-scrollbar {
       grid-template-columns: 2fr 1fr;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1023px) {
   .app-common.app-body section .main-content-wrap .main-content {
     display: block;
   }
@@ -317,7 +317,7 @@ body::-webkit-scrollbar {
   margin-bottom: 13.889vw;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1023px) {
   .app-common.app-body section .main-content-wrap .main-content .main-text-box {
     margin-bottom: 6.667vw;
   }
@@ -331,7 +331,7 @@ body::-webkit-scrollbar {
   line-height: 9.375vw;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1023px) {
   .app-common.app-body section .main-content-wrap .main-content .main-text-box p {
     font-size: 11.111vw;
     font-weight: 400;
@@ -343,7 +343,7 @@ body::-webkit-scrollbar {
   margin-bottom: 2.083vw;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1023px) {
   .app-common.app-body section .main-content-wrap .main-content .left-text-box .project-careers {
     margin-bottom: 24px;
     display: none;
@@ -372,7 +372,7 @@ body::-webkit-scrollbar {
   margin-bottom: 0.781vw;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1023px) {
   .app-common.app-body section .main-content-wrap .main-content .left-text-box p {
     font-size: 5.556vw;
     font-weight: 400;
@@ -387,7 +387,7 @@ body::-webkit-scrollbar {
   position: relative;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1023px) {
   .app-common.app-body section .main-content-wrap .main-content .left-text-box li {
     font-size: 3.889vw;
     font-weight: 400;
@@ -427,7 +427,7 @@ body::-webkit-scrollbar {
   z-index: 10;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1023px) {
   .app-common.app-body section.gallery-content .swiper .swiper-slide .text-wrap {
     margin-bottom: 5.556vw;
   }
@@ -441,7 +441,7 @@ body::-webkit-scrollbar {
   word-break: keep-all;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1023px) {
   .app-common.app-body section.gallery-content .swiper .swiper-slide .text-wrap .project-title {
     font-size: 9vw;
     font-weight: 500;
@@ -463,7 +463,7 @@ body::-webkit-scrollbar {
   margin-bottom: 1.563vw;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1023px) {
   .app-common.app-body section.gallery-content .swiper .swiper-slide .text-wrap .project-type {
     font-size: 9vw;
     font-weight: 500;
@@ -486,7 +486,7 @@ body::-webkit-scrollbar {
   text-decoration: none;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1023px) {
   .app-common.app-body section.gallery-content .swiper .swiper-slide .text-wrap .project-link a {
     font-size: 4.444vw;
     font-weight: 400;
@@ -507,7 +507,7 @@ body::-webkit-scrollbar {
   cursor: pointer;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1023px) {
   .app-common.app-body section.gallery-content .swiper .swiper-slide .img-wrap {
     width: 90%;
     left: 50%;
@@ -532,7 +532,7 @@ body::-webkit-scrollbar {
   transition: all 0.8s linear;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1023px) {
   .app-common.app-body section.gallery-content .swiper .swiper-slide .img-wrap img {
     height: 52vw;
   }
