@@ -275,7 +275,7 @@ body::-webkit-scrollbar {
   bottom: 5vw;
   width: 2.865vw;
   position: absolute;
-  left: 50%;
+  left: 49.5%;
   -ms-transform: translate(-50%);
       transform: translate(-50%);
   animation: arrowMove 5s infinite linear;
