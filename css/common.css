@@ -625,8 +625,20 @@ body::-webkit-scrollbar {
   overflow-x: hidden;
 }
 
+@media screen and (max-width: 767px) {
+  .app-common .popup .popup-box {
+    max-width: 90vw !important;
+  }
+}
+
 .app-common .popup .popup-box .img-content {
   width: 74vw;
+}
+
+@media screen and (max-width: 767px) {
+  .app-common .popup .popup-box .img-content {
+    width: 88vw !important;
+  }
 }
 
 .app-common .popup .popup-box .img-content img {
@@ -639,6 +651,14 @@ body::-webkit-scrollbar {
   right: 8%;
   width: 3vw;
   cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .app-common .popup .cancel-btn {
+    top: 2%;
+    right: 5%;
+    width: 10vw;
+  }
 }
 
 .app-common .popup .cancel-btn img {
