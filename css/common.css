@@ -519,6 +519,7 @@ body::-webkit-scrollbar {
 
 .app-common.app-body section.gallery-content .swiper .swiper-slide .text-wrap .project-link a:hover {
   text-shadow: 3px 3px 10px rgba(255, 255, 255, 0.9);
+  transition: 0.2s;
 }
 
 .app-common.app-body section.gallery-content .swiper .swiper-slide .img-wrap {
