@@ -479,6 +479,30 @@ body::-webkit-scrollbar {
   }
 }
 
+.app-common.app-body section.gallery-content .swiper .swiper-slide .text-wrap .tag-wrap {
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 3.333vw;
+}
+
+.app-common.app-body section.gallery-content .swiper .swiper-slide .text-wrap .tag-wrap li {
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  margin-right: 8px;
+  font-size: 18px;
+  font-weight: 500w;
+  padding: 5px 10px;
+}
+
+@media screen and (max-width: 1023px) {
+  .app-common.app-body section.gallery-content .swiper .swiper-slide .text-wrap .tag-wrap li {
+    font-size: 2.8vw;
+    font-weight: 500w;
+    padding: 1.389vw 2.778vw;
+  }
+}
+
 .app-common.app-body section.gallery-content .swiper .swiper-slide .text-wrap .project-link a {
   font-size: 1.563vw;
   font-weight: 400;
@@ -491,6 +515,10 @@ body::-webkit-scrollbar {
     font-size: 4.444vw;
     font-weight: 400;
   }
+}
+
+.app-common.app-body section.gallery-content .swiper .swiper-slide .text-wrap .project-link a:hover {
+  text-shadow: 3px 3px 10px rgba(255, 255, 255, 0.9);
 }
 
 .app-common.app-body section.gallery-content .swiper .swiper-slide .img-wrap {
