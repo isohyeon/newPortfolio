@@ -473,6 +473,11 @@ body::-webkit-scrollbar {
     height: 15vw;
     z-index: 100;
   }
+  body .app-common.app-header .header-wrap::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
   body .app-common.app-header .header-wrap .top-logo {
     cursor: pointer;
     position: absolute;
@@ -637,7 +642,7 @@ body::-webkit-scrollbar {
   }
   body .app-common.app-body section.gallery-content .swiper .swiper-slide .text-wrap .project-type {
     color: transparent;
-    font-size: 9vw;
+    font-size: 9.2vw;
     font-weight: 500;
     margin-bottom: 5.556vw;
   }
@@ -667,8 +672,10 @@ body::-webkit-scrollbar {
   }
   body .app-common.app-body section.gallery-content .swiper .swiper-slide .img-wrap {
     position: absolute;
-    right: 5.208vw;
-    top: 13vw;
+    top: 12%;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
     width: 90%;
     height: 52vw;
     overflow: hidden;
@@ -676,7 +683,11 @@ body::-webkit-scrollbar {
     border-radius: 5px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
     object-fit: cover;
-    cursor: pointer;
+  }
+  body .app-common.app-body section.gallery-content .swiper .swiper-slide .img-wrap::after {
+    display: inline-block;
+    clear: both;
+    content: "";
   }
   body .app-common.app-body section.gallery-content .swiper .swiper-slide .img-wrap:hover img {
     -ms-transform: scale(1.1);
