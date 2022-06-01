@@ -129,569 +129,652 @@ body::-webkit-scrollbar {
   /* 스크롤바의 너비 */
 }
 
-.app-common {
-  margin: 0px auto;
-}
-
-.app-common.app-header {
-  width: 100%;
-}
-
-.app-common.app-header .header-wrap {
-  position: fixed;
-  left: 50%;
-  -ms-transform: translateX(-50%);
-      transform: translateX(-50%);
-  width: 90%;
-  height: 5.208vw;
-  z-index: 100;
-}
-
-@media screen and (max-width: 1023px) {
+@media all and (orientation: landscape) {
+  .app-common {
+    margin: 0px auto;
+  }
+  .app-common.app-header {
+    width: 100%;
+  }
   .app-common.app-header .header-wrap {
-    height: 15vw;
+    position: fixed;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+    width: 90%;
+    height: 5.208vw;
+    z-index: 100;
+  }
+  .app-common.app-header .header-wrap .top-logo {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+  }
+  .app-common.app-header .header-wrap .top-logo img {
+    width: 7.187vw;
+  }
+  .app-common.app-header .header-wrap .logo-link {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+  }
+  .app-common.app-header .header-wrap .logo-link img {
+    width: 2.5vw;
+    cursor: pointer;
+    margin-right: 0.5vw;
+  }
+  .app-common.app-header .header-wrap .logo-link img:last-child {
+    margin: 0 !important;
+  }
+  .app-common.app-body section {
+    height: 100vh;
+    padding: 5.208vw 5.208vw 3.125vw 5.208vw;
+    position: relative;
   }
 }
 
-.app-common.app-header .header-wrap .top-logo {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
+@media all and (orientation: landscape) and (orientation: landscape) {
+  .app-common.app-body section .main-content-wrap .top-btn-wrap .top-btn:hover {
+    cursor: pointer;
+  }
+  .app-common.app-body section .main-content-wrap .top-btn-wrap .top-btn:hover > #click {
+    opacity: 1 !important;
+  }
+  .app-common.app-body section .main-content-wrap .top-btn-wrap .top-btn .click {
+    color: #fff;
+    position: absolute;
+    bottom: 7.2vw;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+    font-size: 40px;
+    font-weight: 900;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: 1s;
+  }
+  .app-common.app-body section .main-content-wrap .top-btn-wrap .border-line-img,
+  .app-common.app-body section .main-content-wrap .top-btn-wrap .arrow-down-img {
+    position: absolute;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+  }
+  .app-common.app-body section .main-content-wrap .top-btn-wrap .border-line-img {
+    width: 12vw;
+    bottom: 1vh;
+    left: 43.5% !important;
+    animation: borderLine 20s infinite linear;
+  }
+  @keyframes borderLine {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .app-common.app-body section .main-content-wrap .top-btn-wrap .arrow-down-img {
+    width: 3vw;
+    bottom: 5vw;
+    width: 2.865vw;
+    position: absolute;
+    left: 49.5%;
+    -ms-transform: translate(-50%);
+        transform: translate(-50%);
+    animation: arrowMove 5s infinite linear;
+  }
+  @keyframes arrowMove {
+    0% {
+      bottom: -1vw;
+    }
+    50% {
+      bottom: 3vw;
+    }
+    100% {
+      bottom: -1vw;
+    }
+  }
+  .app-common.app-body section .main-content-wrap .main-content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 1fr;
+        grid-template-columns: 2fr 1fr;
+  }
+  .app-common.app-body section .main-content-wrap .main-content .main-text-box {
+    margin-bottom: 13.889vw;
+  }
+  .app-common.app-body section .main-content-wrap .main-content .main-text-box p {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 6.563vw;
+    font-weight: 400;
+    line-height: 9.375vw;
+  }
+  .app-common.app-body section .main-content-wrap .main-content .left-text-box .project-careers {
+    margin-bottom: 2.083vw;
+  }
+  .app-common.app-body section .main-content-wrap .main-content .left-text-box .careers p,
+  .app-common.app-body section .main-content-wrap .main-content .left-text-box .careers ul > li {
+    color: #D1ED5D;
+  }
+  .app-common.app-body section .main-content-wrap .main-content .left-text-box p,
+  .app-common.app-body section .main-content-wrap .main-content .left-text-box ul > li {
+    color: #FFFFFF;
+  }
+  .app-common.app-body section .main-content-wrap .main-content .left-text-box p {
+    font-size: 1.823vw;
+    font-weight: 400;
+    margin-bottom: 0.781vw;
+  }
+  .app-common.app-body section .main-content-wrap .main-content .left-text-box li {
+    font-size: 1.51vw;
+    font-weight: 400;
+    line-height: 2.45vw;
+    word-break: keep-all;
+    position: relative;
+  }
+  .app-common.app-body section .main-content-wrap .main-content .left-text-box li::before {
+    display: inline-block;
+    content: "-";
+    position: absolute;
+    left: -12px;
+  }
 }
 
-.app-common.app-header .header-wrap .top-logo img {
-  width: 7.187vw;
+@media all and (orientation: landscape) {
+  .app-common.app-body section.gallery-content {
+    padding: 0 !important;
+  }
+  .app-common.app-body section.gallery-content .swiper {
+    width: 100%;
+    height: 100vh;
+  }
+  .app-common.app-body section.gallery-content .swiper .swiper-slide {
+    text-align: center;
+    font-size: 0.938vw;
+    background: #FFFFFF;
+    padding: 4.167vw;
+    position: relative;
+  }
+  .app-common.app-body section.gallery-content .swiper .swiper-slide .text-wrap {
+    text-align: left;
+    position: absolute;
+    bottom: 6.25vw;
+    left: 8.854vw;
+    z-index: 10;
+  }
+  .app-common.app-body section.gallery-content .swiper .swiper-slide .text-wrap .project-title {
+    font-size: 4.688vw;
+    font-weight: 500;
+    color: #fff;
+    width: 19.271vw;
+    word-break: keep-all;
+  }
+  .app-common.app-body section.gallery-content .swiper .swiper-slide .text-wrap .project-type {
+    font-size: 4.167vw;
+    font-weight: 500;
+    color: transparent;
+    margin-bottom: 1.563vw;
+  }
+  .app-common.app-body section.gallery-content .swiper .swiper-slide .text-wrap .tag-wrap {
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 3.333vw;
+  }
+  .app-common.app-body section.gallery-content .swiper .swiper-slide .text-wrap .tag-wrap li {
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    margin-right: 8px;
+    font-size: 0.938vw;
+    font-weight: 500w;
+    padding: 5px 10px;
+  }
+  .app-common.app-body section.gallery-content .swiper .swiper-slide .text-wrap .project-link a {
+    font-size: 1.563vw;
+    font-weight: 400;
+    color: #fff;
+    text-decoration: none;
+  }
+  .app-common.app-body section.gallery-content .swiper .swiper-slide .text-wrap .project-link a:hover {
+    text-shadow: 3px 3px 10px rgba(255, 255, 255, 0.9);
+    transition: 0.2s;
+  }
+  .app-common.app-body section.gallery-content .swiper .swiper-slide .img-wrap {
+    position: absolute;
+    right: 5.208vw;
+    top: 9.271vw;
+    width: 62.5vw;
+    height: 35.417vw;
+    overflow: hidden;
+    background: #000;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
+    object-fit: cover;
+    cursor: pointer;
+  }
+  .app-common.app-body section.gallery-content .swiper .swiper-slide .img-wrap:hover img {
+    -ms-transform: scale(1.1);
+        transform: scale(1.1);
+    box-sizing: border-box;
+  }
+  .app-common.app-body section.gallery-content .swiper .swiper-slide .img-wrap img {
+    border-radius: 5px;
+    object-fit: cover;
+    width: 100%;
+    height: 35.417vw;
+    transition: all 0.8s linear;
+  }
+  .app-common.app-body section.gallery-content .swiper .swiper-slide.slide-one {
+    background: #fed500;
+  }
+  .app-common.app-body section.gallery-content .swiper .swiper-slide.slide-one .project-type {
+    -webkit-text-stroke: 0.104vw #5815a5;
+  }
+  .app-common.app-body section.gallery-content .swiper .swiper-slide.slide-two {
+    background: #EC595C;
+  }
+  .app-common.app-body section.gallery-content .swiper .swiper-slide.slide-two .project-type {
+    -webkit-text-stroke: 0.104vw #1DA141;
+  }
+  .app-common.app-body section.gallery-content .swiper .swiper-slide.slide-three {
+    background: #F3464A;
+  }
+  .app-common.app-body section.gallery-content .swiper .swiper-slide.slide-three .project-type {
+    -webkit-text-stroke: 0.104vw #8CF252;
+  }
+  .app-common.app-body section.gallery-content .swiper .swiper-slide.slide-four {
+    background: #4051A8;
+  }
+  .app-common.app-body section.gallery-content .swiper .swiper-slide.slide-four .project-type {
+    -webkit-text-stroke: 0.104vw #F5ED45;
+  }
+  .app-common.app-body section.gallery-content .swiper .swiper-slide.slide-five {
+    background: #3ABF71;
+  }
+  .app-common.app-body section.gallery-content .swiper .swiper-slide.slide-five .project-type {
+    -webkit-text-stroke: 0.104vw #514DBF;
+  }
+  .app-common.app-body section.gallery-content .swiper .swiper-slide.slide-six {
+    background: #151E4A;
+  }
+  .app-common.app-body section.gallery-content .swiper .swiper-slide.slide-six .project-type {
+    -webkit-text-stroke: 0.104vw #8D78B0;
+  }
+  .app-common.app-body section.gallery-content .swiper .swiper-slide.slide-seven {
+    background: #FF9B2A;
+  }
+  .app-common.app-body section.gallery-content .swiper .swiper-slide.slide-seven .project-type {
+    -webkit-text-stroke: 0.104vw #0B29B3;
+  }
+  .app-common.app-body section.gallery-content .swiper .swiper-slide.slide-eight {
+    background: #366DF2;
+  }
+  .app-common.app-body section.gallery-content .swiper .swiper-slide.slide-eight .project-type {
+    -webkit-text-stroke: 0.104vw #F2DF29;
+  }
+  .app-common .popup {
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+  }
+  .app-common .popup .popup-box {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    max-width: 80vw;
+    height: 84vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .app-common .popup .popup-box .img-content {
+    width: 74vw;
+  }
+  .app-common .popup .popup-box .img-content img {
+    width: 100%;
+  }
+  .app-common .popup .cancel-btn {
+    position: absolute;
+    top: 8%;
+    right: 8%;
+    width: 3vw;
+    cursor: pointer;
+  }
+  .app-common .popup .cancel-btn img {
+    width: 100%;
+  }
 }
 
-@media screen and (max-width: 1023px) {
-  .app-common.app-header .header-wrap .top-logo img {
+@media all and (orientation: portrait) and (max-width: 1023px) {
+  body .app-common {
+    margin: 0px auto;
+  }
+  body .app-common.app-header {
+    width: 100%;
+  }
+  body .app-common.app-header .header-wrap {
+    position: fixed;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+    width: 90%;
+    height: 15vw;
+    z-index: 100;
+  }
+  body .app-common.app-header .header-wrap .top-logo {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+  }
+  body .app-common.app-header .header-wrap .top-logo img {
     width: 27.778vw;
   }
-}
-
-.app-common.app-header .header-wrap .logo-link {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
-}
-
-.app-common.app-header .header-wrap .logo-link img {
-  width: 2.5vw;
-  cursor: pointer;
-  margin-right: 0.5vw;
-}
-
-.app-common.app-header .header-wrap .logo-link img:last-child {
-  margin: 0 !important;
-}
-
-@media screen and (max-width: 1023px) {
-  .app-common.app-header .header-wrap .logo-link img {
+  body .app-common.app-header .header-wrap .logo-link {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+  }
+  body .app-common.app-header .header-wrap .logo-link img {
     width: 7vw;
+    cursor: pointer;
+    margin-right: 0.5vw;
   }
-}
-
-.app-common.app-body section {
-  height: 100vh;
-  padding: 5.208vw 5.208vw 3.125vw 5.208vw;
-  position: relative;
-}
-
-@media screen and (max-width: 1023px) {
-  .app-common.app-body section {
+  body .app-common.app-header .header-wrap .logo-link img:last-child {
+    margin: 0 !important;
+  }
+  body .app-common.app-body section {
+    height: 100vh;
     padding: 15vw 5.208vw 3.125vw 5.208vw;
+    position: relative;
   }
-}
-
-.app-common.app-body section .main-content-wrap .top-btn-wrap .top-btn:hover {
-  cursor: pointer;
-}
-
-.app-common.app-body section .main-content-wrap .top-btn-wrap .top-btn:hover > #click {
-  opacity: 1 !important;
-}
-
-.app-common.app-body section .main-content-wrap .top-btn-wrap .top-btn .click {
-  color: #fff;
-  position: absolute;
-  bottom: 7.2vw;
-  left: 50%;
-  -ms-transform: translateX(-50%);
-      transform: translateX(-50%);
-  font-size: 40px;
-  font-weight: 900;
-  text-transform: uppercase;
-  opacity: 0;
-  transition: 1s;
-}
-
-@media screen and (max-width: 1023px) {
-  .app-common.app-body section .main-content-wrap .top-btn-wrap .top-btn .click {
+  body .app-common.app-body section .main-content-wrap .top-btn-wrap .top-btn:hover {
+    cursor: pointer;
+  }
+  body .app-common.app-body section .main-content-wrap .top-btn-wrap .top-btn:hover > #click {
     opacity: 1 !important;
+  }
+  body .app-common.app-body section .main-content-wrap .top-btn-wrap .top-btn .click {
+    color: #fff;
+    position: absolute;
+    bottom: 0vw !important;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
     font-size: 5vw;
     font-weight: 900;
-    bottom: 0vw !important;
+    text-transform: uppercase;
+    opacity: 1 !important;
+    transition: 1s;
   }
-}
-
-.app-common.app-body section .main-content-wrap .top-btn-wrap .border-line-img,
-.app-common.app-body section .main-content-wrap .top-btn-wrap .arrow-down-img {
-  position: absolute;
-  left: 50%;
-  -ms-transform: translateX(-50%);
-      transform: translateX(-50%);
-}
-
-.app-common.app-body section .main-content-wrap .top-btn-wrap .border-line-img {
-  width: 12vw;
-  bottom: 1vh;
-  left: 43.5% !important;
-  animation: borderLine 20s infinite linear;
-}
-
-@media screen and (max-width: 1023px) {
-  .app-common.app-body section .main-content-wrap .top-btn-wrap .border-line-img {
+  body .app-common.app-body section .main-content-wrap .top-btn-wrap .border-line-img,
+  body .app-common.app-body section .main-content-wrap .top-btn-wrap .arrow-down-img {
+    position: absolute;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+  }
+  body .app-common.app-body section .main-content-wrap .top-btn-wrap .border-line-img {
     width: 35vw;
-    left: 33% !important;
     bottom: 5vh;
+    left: 33% !important;
+    animation: borderLine 20s infinite linear;
   }
-}
-
-@keyframes borderLine {
-  from {
-    transform: rotate(0deg);
+  @keyframes borderLine {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.app-common.app-body section .main-content-wrap .top-btn-wrap .arrow-down-img {
-  width: 3vw;
-  bottom: 5vw;
-  width: 2.865vw;
-  position: absolute;
-  left: 49.5%;
-  -ms-transform: translate(-50%);
-      transform: translate(-50%);
-  animation: arrowMove 5s infinite linear;
-}
-
-@keyframes arrowMove {
-  0% {
-    bottom: -1vw;
-  }
-  50% {
-    bottom: 3vw;
-  }
-  100% {
-    bottom: -1vw;
-  }
-}
-
-@media screen and (max-width: 1023px) {
-  .app-common.app-body section .main-content-wrap .top-btn-wrap .arrow-down-img {
+  body .app-common.app-body section .main-content-wrap .top-btn-wrap .arrow-down-img {
+    width: 3vw;
     width: 8vw;
     bottom: 5vh !important;
+    position: absolute;
+    left: 49.5%;
+    -ms-transform: translate(-50%);
+        transform: translate(-50%);
+    animation: arrowMove 5s infinite linear;
   }
-}
-
-.app-common.app-body section .main-content-wrap .main-content {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 2fr 1fr;
-      grid-template-columns: 2fr 1fr;
-}
-
-@media screen and (max-width: 1023px) {
-  .app-common.app-body section .main-content-wrap .main-content {
+  @keyframes arrowMove {
+    0% {
+      bottom: -1vw;
+    }
+    50% {
+      bottom: 3vw;
+    }
+    100% {
+      bottom: -1vw;
+    }
+  }
+  body .app-common.app-body section .main-content-wrap .main-content {
     display: block;
   }
-}
-
-.app-common.app-body section .main-content-wrap .main-content .main-text-box {
-  margin-bottom: 13.889vw;
-}
-
-@media screen and (max-width: 1023px) {
-  .app-common.app-body section .main-content-wrap .main-content .main-text-box {
+  body .app-common.app-body section .main-content-wrap .main-content .main-text-box {
     margin-bottom: 6.667vw;
   }
-}
-
-.app-common.app-body section .main-content-wrap .main-content .main-text-box p {
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 6.563vw;
-  font-weight: 400;
-  line-height: 9.375vw;
-}
-
-@media screen and (max-width: 1023px) {
-  .app-common.app-body section .main-content-wrap .main-content .main-text-box p {
+  body .app-common.app-body section .main-content-wrap .main-content .main-text-box p {
+    color: #fff;
+    text-transform: uppercase;
     font-size: 11.111vw;
     font-weight: 400;
     line-height: 12.778vw;
   }
-}
-
-.app-common.app-body section .main-content-wrap .main-content .left-text-box .project-careers {
-  margin-bottom: 2.083vw;
-}
-
-@media screen and (max-width: 1023px) {
-  .app-common.app-body section .main-content-wrap .main-content .left-text-box .project-careers {
+  body .app-common.app-body section .main-content-wrap .main-content .left-text-box .project-careers {
     margin-bottom: 24px;
     display: none;
   }
-}
-
-@media screen and (max-width: 767px) {
-  .app-common.app-body section .main-content-wrap .main-content .left-text-box .project-careers {
-    display: block;
+  body .app-common.app-body section .main-content-wrap .main-content .left-text-box .careers p,
+  body .app-common.app-body section .main-content-wrap .main-content .left-text-box .careers ul > li {
+    color: #D1ED5D;
   }
-}
-
-.app-common.app-body section .main-content-wrap .main-content .left-text-box .careers p,
-.app-common.app-body section .main-content-wrap .main-content .left-text-box .careers ul > li {
-  color: #D1ED5D;
-}
-
-.app-common.app-body section .main-content-wrap .main-content .left-text-box p,
-.app-common.app-body section .main-content-wrap .main-content .left-text-box ul > li {
-  color: #FFFFFF;
-}
-
-.app-common.app-body section .main-content-wrap .main-content .left-text-box p {
-  font-size: 1.823vw;
-  font-weight: 400;
-  margin-bottom: 0.781vw;
-}
-
-@media screen and (max-width: 1023px) {
-  .app-common.app-body section .main-content-wrap .main-content .left-text-box p {
+  body .app-common.app-body section .main-content-wrap .main-content .left-text-box p,
+  body .app-common.app-body section .main-content-wrap .main-content .left-text-box ul > li {
+    color: #FFFFFF;
+  }
+  body .app-common.app-body section .main-content-wrap .main-content .left-text-box p {
     font-size: 5.556vw;
     font-weight: 400;
+    margin-bottom: 0.781vw;
   }
-}
-
-.app-common.app-body section .main-content-wrap .main-content .left-text-box li {
-  font-size: 1.51vw;
-  font-weight: 400;
-  line-height: 2.45vw;
-  word-break: keep-all;
-  position: relative;
-}
-
-@media screen and (max-width: 1023px) {
-  .app-common.app-body section .main-content-wrap .main-content .left-text-box li {
+  body .app-common.app-body section .main-content-wrap .main-content .left-text-box li {
     font-size: 3.889vw;
     font-weight: 400;
     line-height: 5vw;
+    word-break: keep-all;
+    position: relative;
   }
-}
-
-.app-common.app-body section .main-content-wrap .main-content .left-text-box li::before {
-  display: inline-block;
-  content: "-";
-  position: absolute;
-  left: -12px;
-}
-
-.app-common.app-body section.gallery-content {
-  padding: 0 !important;
-}
-
-.app-common.app-body section.gallery-content .swiper {
-  width: 100%;
-  height: 100vh;
-}
-
-.app-common.app-body section.gallery-content .swiper .swiper-slide {
-  text-align: center;
-  font-size: 0.938vw;
-  background: #FFFFFF;
-  padding: 4.167vw;
-  position: relative;
-}
-
-.app-common.app-body section.gallery-content .swiper .swiper-slide .text-wrap {
-  text-align: left;
-  position: absolute;
-  bottom: 6.25vw;
-  left: 8.854vw;
-  z-index: 10;
-}
-
-@media screen and (max-width: 1023px) {
-  .app-common.app-body section.gallery-content .swiper .swiper-slide .text-wrap {
-    margin-bottom: 5.556vw;
+  body .app-common.app-body section .main-content-wrap .main-content .left-text-box li::before {
+    display: inline-block;
+    content: "-";
+    position: absolute;
+    left: -12px;
   }
-}
-
-.app-common.app-body section.gallery-content .swiper .swiper-slide .text-wrap .project-title {
-  font-size: 4.688vw;
-  font-weight: 500;
-  color: #fff;
-  width: 370px;
-  word-break: keep-all;
-}
-
-@media screen and (max-width: 1023px) {
-  .app-common.app-body section.gallery-content .swiper .swiper-slide .text-wrap .project-title {
+  body .app-common.app-body section.gallery-content {
+    padding: 0 !important;
+  }
+  body .app-common.app-body section.gallery-content .swiper {
+    width: 100%;
+    height: 100vh;
+  }
+  body .app-common.app-body section.gallery-content .swiper .swiper-slide {
+    text-align: center;
+    font-size: 0.938vw;
+    background: #FFFFFF;
+    padding: 4.167vw;
+    position: relative;
+  }
+  body .app-common.app-body section.gallery-content .swiper .swiper-slide .text-wrap {
+    text-align: left;
+    position: absolute;
+    bottom: 6.25vw;
+    left: 8.854vw;
+    z-index: 10;
+  }
+  body .app-common.app-body section.gallery-content .swiper .swiper-slide .text-wrap .project-title {
     font-size: 9vw;
     font-weight: 500;
+    color: #fff;
     width: 100% !important;
+    word-break: keep-all;
   }
-}
-
-@media screen and (max-width: 415px) {
-  .app-common.app-body section.gallery-content .swiper .swiper-slide .text-wrap .project-title {
-    font-size: 13.333vw;
-    font-weight: 500;
-  }
-}
-
-.app-common.app-body section.gallery-content .swiper .swiper-slide .text-wrap .project-type {
-  font-size: 4.167vw;
-  font-weight: 500;
-  color: transparent;
-  margin-bottom: 1.563vw;
-}
-
-@media screen and (max-width: 1023px) {
-  .app-common.app-body section.gallery-content .swiper .swiper-slide .text-wrap .project-type {
+  body .app-common.app-body section.gallery-content .swiper .swiper-slide .text-wrap .project-type {
+    color: transparent;
     font-size: 9vw;
     font-weight: 500;
     margin-bottom: 5.556vw;
   }
-}
-
-@media screen and (max-width: 415px) {
-  .app-common.app-body section.gallery-content .swiper .swiper-slide .text-wrap .project-type {
-    font-size: 10vw;
-    font-weight: 500;
-    margin-bottom: 5.556vw;
+  body .app-common.app-body section.gallery-content .swiper .swiper-slide .text-wrap .tag-wrap {
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 3.333vw;
   }
-}
-
-.app-common.app-body section.gallery-content .swiper .swiper-slide .text-wrap .tag-wrap {
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 3.333vw;
-}
-
-.app-common.app-body section.gallery-content .swiper .swiper-slide .text-wrap .tag-wrap li {
-  color: #fff;
-  border: 1px solid #fff;
-  border-radius: 4px;
-  margin-right: 8px;
-  font-size: 18px;
-  font-weight: 500w;
-  padding: 5px 10px;
-}
-
-@media screen and (max-width: 1023px) {
-  .app-common.app-body section.gallery-content .swiper .swiper-slide .text-wrap .tag-wrap li {
+  body .app-common.app-body section.gallery-content .swiper .swiper-slide .text-wrap .tag-wrap li {
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    margin-right: 8px;
     font-size: 2.8vw;
     font-weight: 500w;
     padding: 1.389vw 2.778vw;
   }
-}
-
-.app-common.app-body section.gallery-content .swiper .swiper-slide .text-wrap .project-link a {
-  font-size: 1.563vw;
-  font-weight: 400;
-  color: #fff;
-  text-decoration: none;
-}
-
-@media screen and (max-width: 1023px) {
-  .app-common.app-body section.gallery-content .swiper .swiper-slide .text-wrap .project-link a {
+  body .app-common.app-body section.gallery-content .swiper .swiper-slide .text-wrap .project-link a {
     font-size: 4.444vw;
     font-weight: 400;
+    color: #fff;
+    text-decoration: none;
   }
-}
-
-.app-common.app-body section.gallery-content .swiper .swiper-slide .text-wrap .project-link a:hover {
-  text-shadow: 3px 3px 10px rgba(255, 255, 255, 0.9);
-  transition: 0.2s;
-}
-
-.app-common.app-body section.gallery-content .swiper .swiper-slide .img-wrap {
-  position: absolute;
-  right: 5.208vw;
-  top: 9.271vw;
-  width: 62.5vw;
-  height: 35.417vw;
-  overflow: hidden;
-  background: #000;
-  border-radius: 5px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
-  object-fit: cover;
-  cursor: pointer;
-}
-
-@media screen and (max-width: 1023px) {
-  .app-common.app-body section.gallery-content .swiper .swiper-slide .img-wrap {
+  body .app-common.app-body section.gallery-content .swiper .swiper-slide .text-wrap .project-link a:hover {
+    text-shadow: 3px 3px 10px rgba(255, 255, 255, 0.9);
+    transition: 0.2s;
+  }
+  body .app-common.app-body section.gallery-content .swiper .swiper-slide .img-wrap {
+    position: absolute;
+    right: 5.208vw;
+    top: 13vw;
     width: 90%;
+    height: 52vw;
+    overflow: hidden;
+    background: #000;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
+    object-fit: cover;
+    cursor: pointer;
+  }
+  body .app-common.app-body section.gallery-content .swiper .swiper-slide .img-wrap:hover img {
+    -ms-transform: scale(1.1);
+        transform: scale(1.1);
+    box-sizing: border-box;
+  }
+  body .app-common.app-body section.gallery-content .swiper .swiper-slide .img-wrap img {
+    border-radius: 5px;
+    object-fit: cover;
+    width: 100%;
+    height: 52vw;
+    transition: all 0.8s linear;
+  }
+  body .app-common.app-body section.gallery-content .swiper .swiper-slide.slide-one {
+    background: #fed500;
+  }
+  body .app-common.app-body section.gallery-content .swiper .swiper-slide.slide-one .project-type {
+    -webkit-text-stroke: 0.15vw #5815a5;
+  }
+  body .app-common.app-body section.gallery-content .swiper .swiper-slide.slide-two {
+    background: #EC595C;
+  }
+  body .app-common.app-body section.gallery-content .swiper .swiper-slide.slide-two .project-type {
+    -webkit-text-stroke: 0.15vw #1DA141;
+  }
+  body .app-common.app-body section.gallery-content .swiper .swiper-slide.slide-three {
+    background: #F3464A;
+  }
+  body .app-common.app-body section.gallery-content .swiper .swiper-slide.slide-three .project-type {
+    -webkit-text-stroke: 0.15vw #8CF252;
+  }
+  body .app-common.app-body section.gallery-content .swiper .swiper-slide.slide-four {
+    background: #4051A8;
+  }
+  body .app-common.app-body section.gallery-content .swiper .swiper-slide.slide-four .project-type {
+    -webkit-text-stroke: 0.15vw #F5ED45;
+  }
+  body .app-common.app-body section.gallery-content .swiper .swiper-slide.slide-five {
+    background: #3ABF71;
+  }
+  body .app-common.app-body section.gallery-content .swiper .swiper-slide.slide-five .project-type {
+    -webkit-text-stroke: 0.15vw #514DBF;
+  }
+  body .app-common.app-body section.gallery-content .swiper .swiper-slide.slide-six {
+    background: #151E4A;
+  }
+  body .app-common.app-body section.gallery-content .swiper .swiper-slide.slide-six .project-type {
+    -webkit-text-stroke: 0.15vw #8D78B0;
+  }
+  body .app-common.app-body section.gallery-content .swiper .swiper-slide.slide-seven {
+    background: #FF9B2A;
+  }
+  body .app-common.app-body section.gallery-content .swiper .swiper-slide.slide-seven .project-type {
+    -webkit-text-stroke: 0.15vw #0B29B3;
+  }
+  body .app-common.app-body section.gallery-content .swiper .swiper-slide.slide-eight {
+    background: #366DF2;
+  }
+  body .app-common.app-body section.gallery-content .swiper .swiper-slide.slide-eight .project-type {
+    -webkit-text-stroke: 0.15vw #F2DF29;
+  }
+  body .app-common .popup {
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+  }
+  body .app-common .popup .popup-box {
+    position: absolute;
     left: 50%;
-    top: 15%;
-    -ms-transform: translateX(-50%);
-        transform: translateX(-50%);
-    height: 52vw;
+    top: 50%;
+    -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    max-width: 80vw;
+    height: 84vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
-}
-
-.app-common.app-body section.gallery-content .swiper .swiper-slide .img-wrap:hover img {
-  -ms-transform: scale(1.1);
-      transform: scale(1.1);
-  box-sizing: border-box;
-}
-
-.app-common.app-body section.gallery-content .swiper .swiper-slide .img-wrap img {
-  border-radius: 5px;
-  object-fit: cover;
-  width: 100%;
-  height: 35.417vw;
-  transition: all 0.8s linear;
-}
-
-@media screen and (max-width: 1023px) {
-  .app-common.app-body section.gallery-content .swiper .swiper-slide .img-wrap img {
-    height: 52vw;
+  body .app-common .popup .popup-box .img-content {
+    width: 74vw;
   }
-}
-
-.app-common.app-body section.gallery-content .swiper .swiper-slide.slide-one {
-  background: #fed500;
-}
-
-.app-common.app-body section.gallery-content .swiper .swiper-slide.slide-one .project-type {
-  -webkit-text-stroke: 0.104vw #5815a5;
-}
-
-.app-common.app-body section.gallery-content .swiper .swiper-slide.slide-two {
-  background: #EC595C;
-}
-
-.app-common.app-body section.gallery-content .swiper .swiper-slide.slide-two .project-type {
-  -webkit-text-stroke: 0.104vw #1DA141;
-}
-
-.app-common.app-body section.gallery-content .swiper .swiper-slide.slide-three {
-  background: #F3464A;
-}
-
-.app-common.app-body section.gallery-content .swiper .swiper-slide.slide-three .project-type {
-  -webkit-text-stroke: 0.104vw #8CF252;
-}
-
-.app-common.app-body section.gallery-content .swiper .swiper-slide.slide-four {
-  background: #4051A8;
-}
-
-.app-common.app-body section.gallery-content .swiper .swiper-slide.slide-four .project-type {
-  -webkit-text-stroke: 0.104vw #F5ED45;
-}
-
-.app-common.app-body section.gallery-content .swiper .swiper-slide.slide-five {
-  background: #3ABF71;
-}
-
-.app-common.app-body section.gallery-content .swiper .swiper-slide.slide-five .project-type {
-  -webkit-text-stroke: 0.104vw #514DBF;
-}
-
-.app-common.app-body section.gallery-content .swiper .swiper-slide.slide-six {
-  background: #151E4A;
-}
-
-.app-common.app-body section.gallery-content .swiper .swiper-slide.slide-six .project-type {
-  -webkit-text-stroke: 0.104vw #8D78B0;
-}
-
-.app-common.app-body section.gallery-content .swiper .swiper-slide.slide-seven {
-  background: #FF9B2A;
-}
-
-.app-common.app-body section.gallery-content .swiper .swiper-slide.slide-seven .project-type {
-  -webkit-text-stroke: 0.104vw #0B29B3;
-}
-
-.app-common.app-body section.gallery-content .swiper .swiper-slide.slide-eight {
-  background: #366DF2;
-}
-
-.app-common.app-body section.gallery-content .swiper .swiper-slide.slide-eight .project-type {
-  -webkit-text-stroke: 0.104vw #F2DF29;
-}
-
-.app-common .popup {
-  display: none;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7);
-  z-index: 100;
-}
-
-.app-common .popup .popup-box {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-  max-width: 80vw;
-  height: 84vh;
-  overflow-y: scroll;
-  overflow-x: hidden;
-}
-
-@media screen and (max-width: 767px) {
-  .app-common .popup .popup-box {
-    max-width: 90vw !important;
+  body .app-common .popup .popup-box .img-content img {
+    width: 100%;
   }
-}
-
-.app-common .popup .popup-box .img-content {
-  width: 74vw;
-}
-
-@media screen and (max-width: 767px) {
-  .app-common .popup .popup-box .img-content {
-    width: 88vw !important;
+  body .app-common .popup .cancel-btn {
+    position: absolute;
+    top: 8%;
+    right: 8%;
+    width: 3vw;
+    cursor: pointer;
   }
-}
-
-.app-common .popup .popup-box .img-content img {
-  width: 100%;
-}
-
-.app-common .popup .cancel-btn {
-  position: absolute;
-  top: 8%;
-  right: 8%;
-  width: 3vw;
-  cursor: pointer;
-}
-
-@media screen and (max-width: 767px) {
-  .app-common .popup .cancel-btn {
-    top: 2%;
-    right: 5%;
-    width: 10vw;
+  body .app-common .popup .cancel-btn img {
+    width: 100%;
   }
-}
-
-.app-common .popup .cancel-btn img {
-  width: 100%;
 }
 
 .swiper-horizontal > .swiper-pagination-bullets,
@@ -740,7 +823,7 @@ body::-webkit-scrollbar {
   display: inline-block;
   content: "";
   width: 10.417vw;
-  height: 2px;
+  height: 1px;
   background: #333;
   margin-bottom: 0.521vw;
   margin-left: 0.26vw !important;
@@ -750,7 +833,7 @@ body::-webkit-scrollbar {
   .swiper-pagination-current::after {
     width: 31.444vw;
     display: inline-block;
-    margin-bottom: 7%;
+    margin-bottom: 5%;
     margin-left: 6.5px !important;
   }
 }
@@ -766,6 +849,7 @@ body::-webkit-scrollbar {
 }
 
 .swiper-button-prev {
+  display: none;
   left: 8.671vw !important;
   top: 10.78vw !important;
   z-index: 1000 !important;
@@ -792,6 +876,7 @@ body::-webkit-scrollbar {
 }
 
 .swiper-button-next {
+  display: none;
   left: 23.354vw !important;
   top: 10.78vw !important;
   z-index: 30 !important;
@@ -813,6 +898,11 @@ body::-webkit-scrollbar {
   .swiper-button-next::after {
     font-size: 5vw !important;
   }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: none;
 }
 
 @media screen and (max-width: 767px) {
