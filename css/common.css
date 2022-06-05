@@ -129,6 +129,15 @@ body::-webkit-scrollbar {
   /* 스크롤바의 너비 */
 }
 
+.bg-noise {
+  position: fixed;
+  z-index: -1;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
 @media all and (orientation: landscape) {
   .app-common {
     margin: 0px auto;

@@ -75,7 +75,7 @@ var mainTextThree = $('.main-text-box>p:last-child');
 
 mainTextOne.animate({ 'margin-left': '0px', 'opacity': '1' }, 1000);
 mainTextTwo.delay(1000).animate({ 'margin-left': '0px', 'opacity': '1' }, 1300);
-mainTextThree.delay(2300).animate({ 'margin-left': '0px', 'opacity': '1' }, 2600);
+mainTextThree.delay(2300).animate({ 'margin-left': '0px', 'opacity': '1' }, 1600);
 
 // project-careers animation효과 (더 효율적으로 쓸수 있는 방법...?)
 var projectOne = $('.project-careers li:first-child');
