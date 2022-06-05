@@ -132,7 +132,7 @@ body::-webkit-scrollbar {
 .bg-noise {
   position: fixed;
   z-index: -1;
-  opacity: 0.5;
+  opacity: 0.4;
   top: 0;
   left: 0;
   width: 100%;
@@ -206,11 +206,12 @@ body::-webkit-scrollbar {
   .app-common.app-body section .main-content-wrap .top-btn-wrap .top-btn .click {
     color: #fff;
     position: absolute;
+    top: 3vw;
     left: 50%;
     -ms-transform: translateX(-50%);
         transform: translateX(-50%);
-    font-size: 40px;
-    font-weight: 900;
+    font-size: 2vw;
+    font-weight: 700;
     text-transform: uppercase;
     opacity: 0;
     transition: 1s;
@@ -269,14 +270,54 @@ body::-webkit-scrollbar {
   .app-common.app-body section .main-content-wrap .main-content .left-text-box .project-careers p,
   .app-common.app-body section .main-content-wrap .main-content .left-text-box .project-careers ul > li {
     color: #FFFFFF;
+    animation: glitch02 2s infinite;
+    text-shadow: 1px -1px 0 rgba(255, 0, 0, 0.8), -1px 1px 2px rgba(0, 0, 255, 0.8);
   }
-  .app-common.app-body section .main-content-wrap .main-content .left-text-box .project-careers ul > li {
-    margin-top: 100px;
-    opacity: 0;
+  @keyframes glitch02 {
+    0% {
+      text-shadow: 1px -1px 2px rgba(255, 0, 0, 0.8), -1px 1px 2px rgba(0, 0, 255, 0.8);
+    }
+    20% {
+      text-shadow: -1px 1px 2px rgba(0, 0, 255, 0.8), 1px -1px 2px rgba(0, 255, 0, 0.6);
+    }
+    40% {
+      text-shadow: 1px -1px 2px rgba(0, 255, 0, 0.6), -1px 1px 2px rgba(255, 0, 0, 0.8);
+    }
+    60% {
+      text-shadow: -1px 1px 2px rgba(255, 0, 0, 0.8), 1px -1px 2px rgba(0, 0, 255, 0.8);
+    }
+    80% {
+      text-shadow: 1px -1px 2px rgba(0, 0, 255, 0.8), -1px 1px 2px rgba(0, 255, 0, 0.6);
+    }
+    100% {
+      text-shadow: -1px 1px 2px rgba(0, 255, 0, 0.6), 1px -1px 2px rgba(255, 0, 0, 0.8);
+    }
   }
   .app-common.app-body section .main-content-wrap .main-content .left-text-box .careers p,
   .app-common.app-body section .main-content-wrap .main-content .left-text-box .careers ul > li {
     color: #D1ED5D;
+    text-shadow: 1px -1px 0 rgba(255, 255, 255, 0.8), -1px 1px 2px rgba(0, 0, 255, 0.8);
+    animation: glitch03 2s infinite;
+  }
+  @keyframes glitch03 {
+    0% {
+      text-shadow: 1px -1px 2px rgba(255, 255, 255, 0.8), -1px 1px 2px rgba(0, 0, 255, 0.8);
+    }
+    20% {
+      text-shadow: -1px 1px 2px rgba(0, 0, 255, 0.8), 1px -1px 2px rgba(0, 255, 0, 0.6);
+    }
+    40% {
+      text-shadow: 1px -1px 2px rgba(0, 255, 0, 0.6), -1px 1px 2px rgba(255, 255, 255, 0.8);
+    }
+    60% {
+      text-shadow: -1px 1px 2px rgba(255, 255, 255, 0.8), 1px -1px 2px rgba(0, 0, 255, 0.8);
+    }
+    80% {
+      text-shadow: 1px -1px 2px rgba(0, 0, 255, 0.8), -1px 1px 2px rgba(0, 255, 0, 0.6);
+    }
+    100% {
+      text-shadow: -1px 1px 2px rgba(0, 255, 0, 0.6), 1px -1px 2px rgba(255, 255, 255, 0.8);
+    }
   }
   .app-common.app-body section .main-content-wrap .main-content .left-text-box p {
     font-size: 1.823vw;
@@ -289,6 +330,8 @@ body::-webkit-scrollbar {
     line-height: 2.45vw;
     word-break: keep-all;
     position: relative;
+    margin-top: 100px;
+    opacity: 0;
   }
   .app-common.app-body section .main-content-wrap .main-content .left-text-box li::before {
     display: inline-block;
@@ -528,12 +571,6 @@ body::-webkit-scrollbar {
   body .app-common.app-body section .main-content-wrap {
     margin-top: 8vh;
   }
-  body .app-common.app-body section .main-content-wrap .top-btn-wrap .top-btn:hover {
-    cursor: pointer;
-  }
-  body .app-common.app-body section .main-content-wrap .top-btn-wrap .top-btn .click {
-    display: none;
-  }
   body .app-common.app-body section .main-content-wrap .top-btn-wrap .border-line-img,
   body .app-common.app-body section .main-content-wrap .top-btn-wrap .arrow-down-img {
     position: absolute;
@@ -560,7 +597,7 @@ body::-webkit-scrollbar {
     width: 8vw;
     bottom: 5vh !important;
     position: absolute;
-    left: 49.5%;
+    left: 50%;
     -ms-transform: translate(-50%);
         transform: translate(-50%);
     animation: arrowMove 5s infinite linear;
@@ -796,146 +833,26 @@ body::-webkit-scrollbar {
   }
 }
 
-.swiper-horizontal > .swiper-pagination-bullets,
-.swiper-pagination-bullets.swiper-pagination-horizontal,
-.swiper-pagination-custom,
-.swiper-pagination-fraction {
-  top: 9.896vw;
-  left: 6.771vw !important;
-  color: transparent;
-  width: 25vw !important;
-  height: 200px !important;
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:root {
+  color: #Fff !important;
 }
 
-@media screen and (max-width: 767px) {
-  .swiper-horizontal > .swiper-pagination-bullets,
-  .swiper-pagination-bullets.swiper-pagination-horizontal,
-  .swiper-pagination-custom,
-  .swiper-pagination-fraction {
-    top: 46.2%;
-    width: 46% !important;
-    left: 51vw !important;
-  }
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next::after {
+  content: 'prev';
+  color: #fff !important;
 }
 
-.swiper-pagination-horizontal {
-  display: inline-block;
-  height: 15px !important;
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev::after {
+  content: 'next';
+  color: #fff !important;
 }
 
-.swiper-pagination-current,
-.swiper-pagination-total {
-  position: absolute;
-  color: #FFFFFF;
-  font-size: 1.563vw;
-  font-weight: 400;
-}
-
-@media screen and (max-width: 767px) {
-  .swiper-pagination-current,
-  .swiper-pagination-total {
-    font-size: 5vw !important;
-  }
-}
-
-.swiper-pagination-current {
-  color: #333 !important;
-  left: 3.5vw;
-}
-
-.swiper-pagination-current::after {
-  display: inline-block;
-  content: "";
-  width: 10.417vw;
-  height: 1px;
-  background: #333;
-  margin-bottom: 0.521vw;
-  margin-left: 0.26vw !important;
-}
-
-@media screen and (max-width: 767px) {
-  .swiper-pagination-current::after {
-    width: 31.444vw;
-    display: inline-block;
-    margin-bottom: 5%;
-    margin-left: 6.5px !important;
-  }
-}
-
-.swiper-pagination-total {
-  left: 15.4vw;
-}
-
-@media screen and (max-width: 767px) {
-  .swiper-pagination-total {
-    left: 42vw !important;
-  }
-}
-
-.swiper-button-prev {
-  display: none;
-  left: 8.671vw !important;
-  top: 10.78vw !important;
-  z-index: 1000 !important;
-}
-
-@media screen and (max-width: 767px) {
-  .swiper-button-prev {
-    position: absolute;
-    right: 0px !important;
-    left: 50% !important;
-  }
-}
-
-.swiper-button-prev::after {
-  font-size: 1.042vw !important;
-  font-weight: 700 !important;
-  color: #333;
-}
-
-@media screen and (max-width: 767px) {
-  .swiper-button-prev::after {
-    font-size: 5vw !important;
-  }
-}
-
-.swiper-button-next {
-  display: none;
-  left: 23.354vw !important;
-  top: 10.78vw !important;
-  z-index: 30 !important;
-}
-
-@media screen and (max-width: 767px) {
-  .swiper-button-next {
-    top: 63% !important;
-    left: 80% !important;
-  }
-}
-
-.swiper-button-next::after {
-  font-size: 1.042vw !important;
-  color: #FFFFFF;
-}
-
-@media screen and (max-width: 767px) {
-  .swiper-button-next::after {
-    font-size: 5vw !important;
-  }
-}
-
-.swiper-button-prev,
-.swiper-button-next {
-  display: none;
-}
-
-@media screen and (max-width: 767px) {
-  .swiper-button-prev,
-  .swiper-button-next {
-    position: absolute;
-    top: 47% !important;
-    width: 20% !important;
-  }
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background: #fff !important;
+  bottom: 0px !important;
 }
 
 /*
@@ -3339,7 +3256,6 @@ textarea {
 
 .glitch {
   animation: glitch 2s infinite;
-  text-shadow: 3px -3px 3px rgba(255, 0, 0, 0.8), -3px 3px 3px rgba(0, 0, 255, 0.8);
 }
 
 @keyframes glitch {

@@ -273,9 +273,14 @@
 <script>
   var swiper = new Swiper(".gallerySwiper", {
     pagination: {
-      el: ".swiper-pagination",
-      type: "fraction",
+      // el: ".swiper-pagination",
+      // type: "fraction",
+      // type: "progressbar",
     },
+    scrollbar: {
+          el: ".swiper-scrollbar",
+          hide: true,
+        },
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",

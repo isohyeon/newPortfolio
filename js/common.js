@@ -87,6 +87,10 @@ var projectSix = $('.project-careers li:nth-child(6)');
 var projectSeven = $('.project-careers li:nth-child(7)');
 var projectEight = $('.project-careers li:nth-child(8)');
 
+var careersOne = $('.careers li:nth-child(1)');
+var careersTwo = $('.careers li:nth-child(2)');
+var careersThree = $('.careers li:nth-child(3)');
+
 projectOne.animate({ 'margin-top': '0px', 'opacity': '1' }, 1000);
 projectTwo.animate({ 'margin-top': '0px', 'opacity': '1' }, 1200);
 projectThree.animate({ 'margin-top': '0px', 'opacity': '1' }, 1400);
@@ -95,6 +99,10 @@ projectFive.animate({ 'margin-top': '0px', 'opacity': '1' }, 1800);
 projectSix.animate({ 'margin-top': '0px', 'opacity': '1' }, 2000);
 projectSeven.animate({ 'margin-top': '0px', 'opacity': '1' }, 2200);
 projectEight.animate({ 'margin-top': '0px', 'opacity': '1' }, 2400);
+
+careersOne.animate({ 'margin-top': '0px', 'opacity': '1' }, 2600);
+careersTwo.animate({ 'margin-top': '0px', 'opacity': '1' }, 2800);
+careersThree.animate({ 'margin-top': '0px', 'opacity': '1' }, 2600);
 
 // careers animation 효과
 //# sourceMappingURL=common.js.map
