@@ -178,6 +178,16 @@ body::-webkit-scrollbar {
 }
 
 @media all and (orientation: landscape) and (orientation: landscape) {
+  .app-common.app-body section .main-content-wrap .top-btn-wrap {
+    text-align: center;
+  }
+  .app-common.app-body section .main-content-wrap .top-btn-wrap .top-btn {
+    position: absolute;
+    left: 50%;
+    bottom: 8vh;
+    -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+  }
   .app-common.app-body section .main-content-wrap .top-btn-wrap .top-btn:hover {
     cursor: pointer;
   }
@@ -187,7 +197,6 @@ body::-webkit-scrollbar {
   .app-common.app-body section .main-content-wrap .top-btn-wrap .top-btn .click {
     color: #fff;
     position: absolute;
-    bottom: 7.2vw;
     left: 50%;
     -ms-transform: translateX(-50%);
         transform: translateX(-50%);
@@ -197,17 +206,8 @@ body::-webkit-scrollbar {
     opacity: 0;
     transition: 1s;
   }
-  .app-common.app-body section .main-content-wrap .top-btn-wrap .border-line-img,
-  .app-common.app-body section .main-content-wrap .top-btn-wrap .arrow-down-img {
-    position: absolute;
-    left: 50%;
-    -ms-transform: translateX(-50%);
-        transform: translateX(-50%);
-  }
   .app-common.app-body section .main-content-wrap .top-btn-wrap .border-line-img {
     width: 12vw;
-    bottom: 1vh;
-    left: 43.5% !important;
     animation: borderLine 20s infinite linear;
   }
   @keyframes borderLine {
@@ -244,9 +244,6 @@ body::-webkit-scrollbar {
     display: grid;
     -ms-grid-columns: 2fr 1fr;
         grid-template-columns: 2fr 1fr;
-  }
-  .app-common.app-body section .main-content-wrap .main-content .main-text-box {
-    margin-bottom: 13.889vw;
   }
   .app-common.app-body section .main-content-wrap .main-content .main-text-box p {
     color: #fff;
@@ -357,6 +354,11 @@ body::-webkit-scrollbar {
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
     object-fit: cover;
     cursor: pointer;
+  }
+  .app-common.app-body section.gallery-content .swiper .swiper-slide .img-wrap:after {
+    display: inline-block;
+    content: "";
+    clear: both;
   }
   .app-common.app-body section.gallery-content .swiper .swiper-slide .img-wrap:hover img {
     -ms-transform: scale(1.1);
@@ -508,24 +510,14 @@ body::-webkit-scrollbar {
     padding: 15vw 5.208vw 3.125vw 5.208vw;
     position: relative;
   }
+  body .app-common.app-body section .main-content-wrap {
+    margin-top: 8vh;
+  }
   body .app-common.app-body section .main-content-wrap .top-btn-wrap .top-btn:hover {
     cursor: pointer;
   }
-  body .app-common.app-body section .main-content-wrap .top-btn-wrap .top-btn:hover > #click {
-    opacity: 1 !important;
-  }
   body .app-common.app-body section .main-content-wrap .top-btn-wrap .top-btn .click {
-    color: #fff;
-    position: absolute;
-    bottom: 0vw !important;
-    left: 50%;
-    -ms-transform: translateX(-50%);
-        transform: translateX(-50%);
-    font-size: 5vw;
-    font-weight: 900;
-    text-transform: uppercase;
-    opacity: 1 !important;
-    transition: 1s;
+    display: none;
   }
   body .app-common.app-body section .main-content-wrap .top-btn-wrap .border-line-img,
   body .app-common.app-body section .main-content-wrap .top-btn-wrap .arrow-down-img {
@@ -589,6 +581,7 @@ body::-webkit-scrollbar {
   body .app-common.app-body section .main-content-wrap .main-content .left-text-box .careers p,
   body .app-common.app-body section .main-content-wrap .main-content .left-text-box .careers ul > li {
     color: #D1ED5D;
+    margin-bottom: 2vw;
   }
   body .app-common.app-body section .main-content-wrap .main-content .left-text-box p,
   body .app-common.app-body section .main-content-wrap .main-content .left-text-box ul > li {
