@@ -524,7 +524,7 @@ body::-webkit-scrollbar {
   }
 }
 
-@media all and (orientation: portrait) and (max-width: 1023px) {
+@media all and (orientation: portrait) and (max-width: 1200px) {
   body .app-common {
     margin: 0px auto;
   }
@@ -648,6 +648,27 @@ body::-webkit-scrollbar {
   body .app-common.app-body section .main-content-wrap .main-content .left-text-box .careers ul > li {
     color: #D1ED5D;
     margin-bottom: 2vw;
+    animation: glitch03 2s infinite;
+  }
+  @keyframes glitch03 {
+    0% {
+      text-shadow: 1px -1px 2px rgba(255, 255, 255, 0.8), -1px 1px 2px rgba(0, 0, 255, 0.8);
+    }
+    20% {
+      text-shadow: -1px 1px 2px rgba(0, 0, 255, 0.8), 1px -1px 2px rgba(0, 255, 0, 0.6);
+    }
+    40% {
+      text-shadow: 1px -1px 2px rgba(0, 255, 0, 0.6), -1px 1px 2px rgba(255, 255, 255, 0.8);
+    }
+    60% {
+      text-shadow: -1px 1px 2px rgba(255, 255, 255, 0.8), 1px -1px 2px rgba(0, 0, 255, 0.8);
+    }
+    80% {
+      text-shadow: 1px -1px 2px rgba(0, 0, 255, 0.8), -1px 1px 2px rgba(0, 255, 0, 0.6);
+    }
+    100% {
+      text-shadow: -1px 1px 2px rgba(0, 255, 0, 0.6), 1px -1px 2px rgba(255, 255, 255, 0.8);
+    }
   }
   body .app-common.app-body section .main-content-wrap .main-content .left-text-box p,
   body .app-common.app-body section .main-content-wrap .main-content .left-text-box ul > li {
