@@ -175,7 +175,7 @@ body::-webkit-scrollbar {
     width: 2.5vw;
     cursor: pointer;
     margin-right: 0.5vw;
-    display: inline-block;
+    display: inline;
   }
   .app-common.app-header .header-wrap .logo-link img:last-child {
     margin: 0 !important;
