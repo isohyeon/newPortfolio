@@ -174,6 +174,7 @@ body::-webkit-scrollbar {
   .app-common.app-header .header-wrap .logo-link ul {
     display: -ms-flexbox;
     display: flex;
+    width: 100%;
   }
   .app-common.app-header .header-wrap .logo-link ul li {
     cursor: pointer;
@@ -535,7 +536,7 @@ body::-webkit-scrollbar {
     left: 50%;
     -ms-transform: translateX(-50%);
         transform: translateX(-50%);
-    width: 90%;
+    width: 95%;
     height: 15vw;
     z-index: 100;
   }
@@ -561,13 +562,20 @@ body::-webkit-scrollbar {
     -ms-transform: translateY(-50%);
         transform: translateY(-50%);
   }
-  body .app-common.app-header .header-wrap .logo-link img {
-    width: 7vw;
+  body .app-common.app-header .header-wrap .logo-link ul {
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+  body .app-common.app-header .header-wrap .logo-link ul li {
     cursor: pointer;
     margin-right: 0.5vw;
   }
-  body .app-common.app-header .header-wrap .logo-link img:last-child {
+  body .app-common.app-header .header-wrap .logo-link ul li:last-child {
     margin: 0 !important;
+  }
+  body .app-common.app-header .header-wrap .logo-link ul li img {
+    width: 7vw;
   }
   body .app-common.app-body section {
     height: 100vh;
@@ -606,9 +614,9 @@ body::-webkit-scrollbar {
     left: 50%;
     -ms-transform: translate(-50%);
         transform: translate(-50%);
-    animation: arrowMove 5s infinite linear;
+    animation: arrowMove2 5s infinite linear;
   }
-  @keyframes arrowMove {
+  @keyframes arrowMove2 {
     0% {
       bottom: -1vw;
     }
