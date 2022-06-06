@@ -171,14 +171,19 @@ body::-webkit-scrollbar {
     -ms-transform: translateY(-50%);
         transform: translateY(-50%);
   }
-  .app-common.app-header .header-wrap .logo-link img {
-    width: 2.5vw;
+  .app-common.app-header .header-wrap .logo-link ul {
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .app-common.app-header .header-wrap .logo-link ul li {
     cursor: pointer;
     margin-right: 0.5vw;
-    display: inline;
   }
-  .app-common.app-header .header-wrap .logo-link img:last-child {
+  .app-common.app-header .header-wrap .logo-link ul li:last-child {
     margin: 0 !important;
+  }
+  .app-common.app-header .header-wrap .logo-link ul li img {
+    width: 2.5vw;
   }
   .app-common.app-body section {
     height: 100vh;
